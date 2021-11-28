@@ -38,7 +38,7 @@ public class Liseners extends CommonOps {
 
     public void onTestFailure(ITestResult test) {
         System.out.println("---------------------- Test " + test.getName() + " Failed ------------------");
-       // CommonOps.saveScreenshot();
+        CommonOps.saveScreenshot();
         try {
             MonteScreenRecorder.stopRecord();
         } catch (Exception e) {
