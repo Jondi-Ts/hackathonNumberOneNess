@@ -1,5 +1,6 @@
 package Utilities;
 
+import com.google.common.util.concurrent.Uninterruptibles;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -8,6 +9,8 @@ import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -24,6 +27,7 @@ import java.util.logging.Level;
 
 import org.w3c.dom.Document;
 import pageObjects.calculator.CalculatorPage;
+import pageObjects.toDoLIst.TodoPage;
 
 public class CommonOps extends Base {
 
@@ -34,7 +38,7 @@ public class CommonOps extends Base {
         driver.get(getData(("url")));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //calculatorTablePage = PageFactory.initElements(driver, CalculatorTablePage.class);
+
     }
 
     @BeforeMethod
@@ -71,7 +75,7 @@ public class CommonOps extends Base {
         doc.getDocumentElement().normalize();
         return doc.getElementsByTagName(nodeName).item(0).getTextContent();
     }
-
+//Apium start
     public void startAppium() throws MalformedURLException {
         dc.setCapability(MobileCapabilityType.UDID, MOBILE_NAME);
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, APP_PACKAGE_NAME);
@@ -86,4 +90,24 @@ public class CommonOps extends Base {
     public void endAppium() {
         androidDriver.quit();
     }
+    //Apium End
+
+    //start Electorn
+    public void startElectron() {
+        System.setProperty(CHROME_DRIVER, DRIVER_LOCATION);
+        opt = new ChromeOptions();
+        opt.setBinary(TODO_EXE_LOCATION);
+        electronCapabilities = new DesiredCapabilities();
+        electronCapabilities.setCapability(CHROME_OPTIONS_STRING, opt);
+        electronCapabilities.setBrowserName(CHROME);
+        electronWebDriver = new ChromeDriver(electronCapabilities);
+        todoPage = PageFactory.initElements(electronWebDriver, TodoPage.class);
+        electronWebDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+    public void endElectron() {
+        Uninterruptibles.sleepUninterruptibly(4, TimeUnit.SECONDS);
+        electronWebDriver.quit();
+    }
+
+    //End Electron
 }

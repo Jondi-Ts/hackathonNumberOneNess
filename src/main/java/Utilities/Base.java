@@ -14,6 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 import pageObjects.calculator.CalculatorPage;
+import pageObjects.toDoLIst.TodoPage;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -42,7 +43,7 @@ public class Base {
     //oop
     //protected static RioPage rioPage;
 
-    //appium
+    //appium start
     //driver
     protected static AndroidDriver<AndroidElement> androidDriver;
 
@@ -58,15 +59,31 @@ public class Base {
 
     //po pages
     protected static CalculatorPage calculatorPage;
-
+//appium end
 
     //desktop
     protected static WindowsDriver driverdesktop;
     protected static DesiredCapabilities capabilities;
 
-    //elektron
-    private ChromeOptions opt;
-    private DesiredCapabilities capabilitieselektron;
+    //elektron start
+    protected static WebDriver electronWebDriver;
+    protected static ChromeOptions opt;
+    protected static DesiredCapabilities electronCapabilities;
+
+    protected static String DRIVER_LOCATION = "C:/Automation/electronDriver/electrondriver.exe";
+    protected static String CHROME_DRIVER = "webdriver.chrome.driver";
+    protected static String TODO_EXE_LOCATION = "C:\\Users\\jondi\\AppData\\Local\\Programs\\todolist\\Todolist.exe";
+    protected static String CHROME_OPTIONS_STRING = "chromeOptions";
+    protected static String CHROME = "chrome";
+
+    //po
+    protected static TodoPage todoPage;
+    protected static int expectedAmountofTodos = 4;
+    public static int expectedAmountofTodosAfterDelete = 3;
+    protected static String expectedEditedTitle = "Edited first goal";
+
+
+    //electron End
 
 
     //JDBC
