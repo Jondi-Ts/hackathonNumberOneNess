@@ -36,22 +36,7 @@ public class Base {
     //protected static RioPage rioPage;
 
     //appium
-   // protected static AndroidDriver<AndroidElement> driverappium;
-    //driver
-    protected static AndroidDriver<AndroidElement> driver;
-
-
-    //NAmes and urls
-    protected static final String MOBILE_NAME = "RF8N21R48PA";
-    protected static final String APP_PACKAGE_NAME = "com.shivgadhia.android.ukMortgageCalc";
-    protected static final String MAIN_ACTIVITY = ".MainActivity";
-    protected static final String APPIUM_URL = "http://localhost:4723/wd/hub";
-
-    //Desired Capabilities
-    protected static DesiredCapabilities dc = new DesiredCapabilities();
-
-    //po pages
-    protected static CalculatorPage calculatorPage;
+    protected static AndroidDriver<AndroidElement> driverappium;
 
 
     //desktop
@@ -61,7 +46,5 @@ public class Base {
     //elektron
     private ChromeOptions opt;
     private DesiredCapabilities capabilitieselektron;
-
-
 
 }
