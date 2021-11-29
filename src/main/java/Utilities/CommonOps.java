@@ -1,5 +1,8 @@
 package Utilities;
 
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
@@ -14,8 +17,13 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+
 import org.w3c.dom.Document;
+import pageObjects.calculator.CalculatorPage;
 
 public class CommonOps extends Base {
 
@@ -39,17 +47,17 @@ public class CommonOps extends Base {
     }
 
 
-
     @AfterClass
     public void endSession() {
         driver.quit();
     }
+
     @Attachment(value = "Page Screen-Shot", type = "image/png")
     public static byte[] saveScreenshot() {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
-    public String getData (String nodeName) {
+    public String getData(String nodeName) {
         DocumentBuilder dBuilder;
         Document doc = null;
         File fXmlFile = new File("ExternalFiles/info.xml");
@@ -57,11 +65,25 @@ public class CommonOps extends Base {
         try {
             dBuilder = dbFactory.newDocumentBuilder();
             doc = dBuilder.parse(fXmlFile);
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("Exception in reading XML file: " + e);
         }
         doc.getDocumentElement().normalize();
         return doc.getElementsByTagName(nodeName).item(0).getTextContent();
+    }
+
+    public void startAppium() throws MalformedURLException {
+        dc.setCapability(MobileCapabilityType.UDID, MOBILE_NAME);
+        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, APP_PACKAGE_NAME);
+        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, MAIN_ACTIVITY);
+        androidDriver = new AndroidDriver<>(new URL(APPIUM_URL), dc);
+        androidDriver.setLogLevel(Level.INFO);
+        calculatorPage = new CalculatorPage(androidDriver);
+        androidDriver.resetApp();
+        calculatorPage.okAfterReset();
+    }
+
+    public void endAppium() {
+        androidDriver.quit();
     }
 }
