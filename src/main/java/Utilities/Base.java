@@ -15,11 +15,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 import pageObjects.calculator.CalculatorPage;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 public class Base {
 
     //general
     protected static WebDriver driver;
-    protected static  Actions action;
+    protected static Actions action;
     //put the url in xml
     protected static String url;
 
@@ -63,5 +67,14 @@ public class Base {
     //elektron
     private ChromeOptions opt;
     private DesiredCapabilities capabilitieselektron;
+
+
+    //JDBC
+    static String dbUrl = "jdbc:mysql://remotemysql.com:3306/Y8Nkn2FnBq";
+    static String username = "Y8Nkn2FnBq";
+    static String password = "kLrc4xtpod";
+    static ResultSet rs;
+    static Connection con;
+    static Statement stmt;
 
 }

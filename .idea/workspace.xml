@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efbcbacf-b1cf-4b72-8e38-57fcf5198479" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/JDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/JDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
