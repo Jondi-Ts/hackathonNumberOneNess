@@ -9,6 +9,7 @@ import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
@@ -17,6 +18,7 @@ public class Base {
 
     //general
     protected static WebDriver driver;
+    protected static  Actions action;
     //put the url in xml
     protected static String url;
 
