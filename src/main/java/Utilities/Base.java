@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 import pageObjects.calculator.CalculatorPage;
 import pageObjects.toDoLIst.TodoPage;
+import pageObjects.uintConverter.CalculatorPage2;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -63,7 +64,9 @@ public class Base {
 
     //desktop
     protected static WindowsDriver driverdesktop;
-    protected static DesiredCapabilities capabilities;
+    protected DesiredCapabilities deskTopCapabilities;
+    protected final String calcApp = "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App";
+    protected static CalculatorPage2 calc;
 
     //elektron start
     protected static WebDriver electronWebDriver;
