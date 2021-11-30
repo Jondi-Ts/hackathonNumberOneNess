@@ -4,6 +4,7 @@ import com.google.common.util.concurrent.Uninterruptibles;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.windows.WindowsDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
@@ -29,6 +30,7 @@ import java.util.logging.Level;
 import org.w3c.dom.Document;
 import pageObjects.calculator.CalculatorPage;
 import pageObjects.toDoLIst.TodoPage;
+import pageObjects.uintConverter.CalculatorPage2;
 
 public class CommonOps extends Base {
 
@@ -46,10 +48,19 @@ public class CommonOps extends Base {
 
     }
 
-    @Step("desc")
+    @Step("init Web")
     public void initWeb(){
         //        if(getData("BrowserName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
 
+    }
+
+    @Step("init deaktop")
+    public void initDeskTop() throws MalformedURLException {
+        deskTopCapabilities =new DesiredCapabilities();
+        deskTopCapabilities.setCapability("app",calcApp);
+        driver=new WindowsDriver(new URL("http://127.0.0.1:4723"), deskTopCapabilities);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        calc = PageFactory.initElements(driver, CalculatorPage2.class);
     }
 
 

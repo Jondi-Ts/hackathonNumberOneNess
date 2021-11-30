@@ -5,6 +5,7 @@ import Utilities.CommonOps;
 import org.testng.Assert;
 import workFlows.WorkFlowAppium;
 import workFlows.WorkFlowElectron;
+import workFlows.WorkFlowDeskTop;
 import extensions.Verfications;
 
 public class TestCases extends CommonOps {
@@ -50,6 +51,17 @@ public class TestCases extends CommonOps {
         Assert.assertEquals(WorkFlowElectron.edit(0), expectedEditedTitle);
 
     }
+
+
+    @Test
+    public  void  testDeskTop(){
+
+        WorkFlowDeskTop.Addition();
+        Verfications.verifyTrue(calc.result()==9);
+
+
+    }
+
 
     //Electron
 }
