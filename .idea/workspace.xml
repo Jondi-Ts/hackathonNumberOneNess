@@ -4,44 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="selenium pages">
-      <change afterPath="$PROJECT_DIR$/TestNGSuiteApi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNGSuiteDesktop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNGSuiteElectron.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNGSuiteMobile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNGSuiteWeb.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testCase/TestsApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExternalFiles/DataForReading.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ExternalFiles/DataForReading.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExternalFiles/info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExternalFiles/info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/DDT/ExternalProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/DDT/FileAux.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/ApiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/ApiActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/uintConverter/CalculatorPage2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/uintConverter/CalculatorPage2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/koku.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/test1.avi" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Record/test1.avi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/test2.avi" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Record/test2.avi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/testDeskTop.avi" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Record/testDeskTop.avi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/DeskTopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/DeskTopTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/AppiumTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/WebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/nnn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/DDT/ExternalProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/JDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/JDBC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/extensions/ApiActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/ApiActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/grafana/Homepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/grafana/Homepage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/uintConverter/CalculatorPage2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/uintConverter/CalculatorPage2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/koku.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/TestCases.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/nnn.class" beforeDir="false" />
-    </list>
+    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="selenium pages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
