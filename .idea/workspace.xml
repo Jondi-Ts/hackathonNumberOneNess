@@ -5,13 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/extensions/DeskTopAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/uintConverter/CalculatorPage2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowDeskTop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/27431b9a-24b2-480e-a5fa-eda1d9629576-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/42297e71-9ac1-4d35-b5e6-710b9a0f24f3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/542e3ec0-c9a6-4a27-baf9-b3b4e0a8972c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/60a3b36d-7d8a-43b6-9ad6-3553e280b7a6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/784ac396-8720-4685-8bf5-2075257c880f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7bee03c7-5c31-4bfc-bfe5-4c7e01892392-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/909cbf8e-db9e-4c1e-b561-3b3df2189c2b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a63b5115-2705-4666-9695-24f5e83903f1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b3dc221f-69a9-4157-99ad-47da05967d4c-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e1912cf0-cc9b-4408-a765-b731ac9078cc-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/grafana/AddDataSourcePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/grafana/DataSourcePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/grafana/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/grafana/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/grafana/NewUserPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/grafana/ServerAdminPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/grafana/UserInfoPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Record/testDeskTop.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Utilities/DDT/ExternalProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Utilities/DDT/ManageDDT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Utilities/JDBC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Utilities/Liseners.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Utilities/MonteScreenRecorder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/extensions/ApiActions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/extensions/DeskTopAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/extensions/Verfications.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage$Direction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/grafana/Homepage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/toDoLIst/TodoPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/uintConverter/CalculatorPage2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/uintConverter/tow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowDeskTop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/workFlows/koku.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/testCase/TestCases.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/testCase/nnn.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/TestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/grafana/Homepage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +76,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/../TestAutomation01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/pageObjects/grafana" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -48,10 +86,12 @@
       <recent name="Utilities.DDT" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pageObjects.grafana" />
       <recent name="workFlows" />
       <recent name="extensions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Automation\HackathonNumberOne\src\main\java\pageObjects\grafana" />
       <recent name="C:\Automation\HackathonNumberOne\ExternalFiles" />
     </key>
   </component>
@@ -134,7 +174,13 @@
       <option name="presentableId" value="LOCAL‎00005" />
       <updated>1638187283749</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎00006" summary="DeskTop">
+      <created>1638267107790</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1638267107790</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,7 +202,8 @@
     <MESSAGE value="oop" />
     <MESSAGE value="oop---cal" />
     <MESSAGE value="only file" />
-    <option name="LAST_COMMIT_MESSAGE" value="only file" />
+    <MESSAGE value="DeskTop" />
+    <option name="LAST_COMMIT_MESSAGE" value="DeskTop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="366" y="78" key="#Project_Structure" timestamp="1638090373364">
@@ -171,10 +218,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="572" y="279" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1638093685120" />
-    <state x="144" y="0" key="CommitChangelistDialog2" timestamp="1638188273926">
+    <state x="144" y="0" key="CommitChangelistDialog2" timestamp="1638267106922">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="144" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1638188273926" />
+    <state x="144" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1638267106922" />
     <state x="555" y="174" key="FileChooserDialogImpl" timestamp="1638173044795">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
