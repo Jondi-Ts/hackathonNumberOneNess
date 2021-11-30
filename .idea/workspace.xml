@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efbcbacf-b1cf-4b72-8e38-57fcf5198479" name="Default Changelist" comment="only file">
+    <list default="true" id="efbcbacf-b1cf-4b72-8e38-57fcf5198479" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/testCase/nnn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/one.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/TestCases.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TestAutomation01" />
+    <property name="last_opened_file_path" value="C:/../TestAutomation01" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -61,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -103,7 +100,19 @@
       <option name="presentableId" value="LOCAL‎00005" />
       <updated>1638187283749</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎00006" summary="test file">
+      <created>1638188275192</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1638188275192</updated>
+    </task>
+    <task id="LOCAL‎00007" summary="test file">
+      <created>1638188326821</created>
+      <option name="number" value="LOCAL‎00007" />
+      <option name="presentableId" value="LOCAL‎00007" />
+      <updated>1638188326821</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,12 +120,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add empty ui actions" />
@@ -124,7 +134,8 @@
     <MESSAGE value="oop" />
     <MESSAGE value="oop---cal" />
     <MESSAGE value="only file" />
-    <option name="LAST_COMMIT_MESSAGE" value="only file" />
+    <MESSAGE value="test file" />
+    <option name="LAST_COMMIT_MESSAGE" value="test file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="366" y="78" key="#Project_Structure" timestamp="1638090373364">
@@ -139,10 +150,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="572" y="279" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1638093685120" />
-    <state x="144" y="0" key="CommitChangelistDialog2" timestamp="1638188273926">
+    <state x="144" y="0" key="CommitChangelistDialog2" timestamp="1638188325646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="144" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1638188273926" />
+    <state x="144" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1638188325646" />
     <state x="555" y="174" key="FileChooserDialogImpl" timestamp="1638173044795">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -151,9 +162,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="551" y="135" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1638188312193" />
-    <state x="584" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1638188294188">
+    <state x="584" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1638257691848">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="584" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1638188294188" />
+    <state x="584" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1638257691848" />
   </component>
 </project>
