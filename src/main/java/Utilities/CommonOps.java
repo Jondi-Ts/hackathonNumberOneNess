@@ -12,8 +12,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
+import org.sikuli.script.Screen;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -27,6 +29,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
+import org.testng.asserts.SoftAssert;
 import org.w3c.dom.Document;
 import pageObjects.calculator.CalculatorPage;
 import pageObjects.toDoLIst.TodoPage;
@@ -48,19 +51,36 @@ public class CommonOps extends Base {
 
     }
 
+    //        if(getData("BrowserName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
+
     @Step("init Web")
     public void initWeb(){
-        //        if(getData("BrowserName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
+
+
+        driver.get("http://localhost:3000/");
+        action = new Actions(driver);
+
+        softAssertion = new SoftAssert();
+
+        //inital the global size
+        sizeofuserstable = myserveradminpage.getrows().size();
+        expectedsizeofrows = myserveradminpage.getrows().size();
+        rows = myserveradminpage.getrows();
+        name = "mory";
+
+        JDBC.initSQLConnection();
+        //sikuli
+        screen = new Screen();
 
     }
 
-    @Step("init deaktop")
+    @Step("init desktop")
     public void initDeskTop() throws MalformedURLException {
         deskTopCapabilities =new DesiredCapabilities();
         deskTopCapabilities.setCapability("app",calcApp);
         driver=new WindowsDriver(new URL("http://127.0.0.1:4723"), deskTopCapabilities);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        calc = PageFactory.initElements(driver, CalculatorPage2.class);
+
     }
 
 
@@ -80,7 +100,16 @@ public class CommonOps extends Base {
 
 
         driver.quit();
+      //  RemoteDb.closeDBCon();
     }
+
+    @Step
+    public  void endWeb()
+    {
+        driver.quit();
+      JDBC.closeDBCon();
+    }
+
 
     @Attachment(value = "Page Screen-Shot", type = "image/png")
     public static byte[] saveScreenshot() {

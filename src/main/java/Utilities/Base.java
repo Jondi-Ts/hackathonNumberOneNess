@@ -8,18 +8,22 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.sikuli.script.Screen;
 import org.testng.asserts.SoftAssert;
 import pageObjects.calculator.CalculatorPage;
+import pageObjects.grafana.*;
 import pageObjects.toDoLIst.TodoPage;
 import pageObjects.uintConverter.CalculatorPage2;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.List;
 
 public class Base {
 
@@ -29,8 +33,29 @@ public class Base {
     //put the url in xml
     protected static String url;
 
-    //web
+    //web-selenium
     protected static WebDriverWait wait;
+    private WebDriver seleniumdriver;
+    protected static SoftAssert softAssertion;
+
+    protected static LoginPage myloginpage;
+    protected static HomePage myhomepage;
+    protected static ServerAdminPage myserveradminpage;
+    protected static NewUserPage mynewuserpage;
+    protected static UserInfoPage myuserinfopage;
+    protected static DataSourcePage myDataPage;
+    protected static  AddDataSourcePage mydspage;
+
+    protected static int expectedsizeofrows;
+    protected static int sizeofuserstable;
+    protected static List<WebElement> rows;
+    protected static String name;
+    protected static String expectedTitle="Welcome to Grafana";
+
+
+    protected static Screen screen;
+    protected static String sikulipath = "C:\\Automation\\HackathonNumberOne\\ImagesRepository";
+
 
     //Rest API
     protected static RequestSpecification request;
@@ -60,7 +85,7 @@ public class Base {
 
     //po pages
     protected static CalculatorPage calculatorPage;
-//appium end
+   //appium end
 
     //desktop
     protected static WindowsDriver driverdesktop;
