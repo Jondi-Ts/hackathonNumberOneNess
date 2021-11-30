@@ -6,6 +6,7 @@ import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,6 +34,10 @@ public class CommonOps extends Base {
 
     @BeforeClass
     public void startSession() {
+
+//        if(getData("PlatformName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
+
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get(getData(("url")));
@@ -40,6 +45,13 @@ public class CommonOps extends Base {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
+
+    @Step("desc")
+    public void initWeb(){
+        //        if(getData("BrowserName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
+
+    }
+
 
     @BeforeMethod
     public void beforeMethod(Method method) {
@@ -53,6 +65,9 @@ public class CommonOps extends Base {
 
     @AfterClass
     public void endSession() {
+        //        if(getData("PlatformName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
+
+
         driver.quit();
     }
 
