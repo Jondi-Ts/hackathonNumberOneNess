@@ -2,6 +2,7 @@ package workFlows;
 
 import Utilities.CommonOps;
 import extensions.ApiActions;
+import io.qameta.allure.Step;
 import io.restassured.path.json.JsonPath;
 import org.json.simple.JSONObject;
 
@@ -10,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 public class WorkFlowApi extends CommonOps {
+    @Step("creating api key")
     public static void createKey(String name, String role) {
         Map<String, String> map = new HashMap<>();
         map.put("name", name);
@@ -21,7 +23,7 @@ public class WorkFlowApi extends CommonOps {
     public static void deleteKey(int id) {
         deleteKey(Integer.toString(id));
     }
-
+@Step("delete key")
     public static void deleteKey(String id) {
         ApiActions.delete(urlKeysSuffix, id);
     }

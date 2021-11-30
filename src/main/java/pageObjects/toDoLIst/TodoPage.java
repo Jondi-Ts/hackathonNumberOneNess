@@ -21,14 +21,14 @@ public class TodoPage extends Base {
     private List<WebElement> delete_btns;
 
 
-    @Step
+    @Step("create todo")
     public void makeTodo(String todoName) {
         input_toDo.sendKeys(todoName);
         Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
         input_toDo.sendKeys(Keys.ENTER);
     }
 
-    @Step
+    @Step("edit todo name")
     public void edit(int editTodoIndex) {
         action = new Actions(electronWebDriver);
         action.moveToElement(list_of_todos.get(editTodoIndex)).doubleClick();
@@ -38,7 +38,7 @@ public class TodoPage extends Base {
 
     }
 
-    @Step
+    @Step("delete todo")
     public void delete(int chooseIndexToDelete) {
         Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
         delete_btns.get(chooseIndexToDelete).click();

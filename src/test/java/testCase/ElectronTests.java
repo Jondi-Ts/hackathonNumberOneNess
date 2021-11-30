@@ -2,35 +2,23 @@ package testCase;
 
 import Utilities.CommonOps;
 import extensions.Verfications;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import workFlows.WorkFlowElectron;
 
 public class ElectronTests extends CommonOps {
-    //Electron
-    @Test
+
+    @Test(priority = 1)
     public void checkAddElectron() {
-
-        expectedAmountofTodos = 4;
-
-        int actual = WorkFlowElectron.createTodos();
-
-        Verfications.verifyEquals(actual, expectedAmountofTodos);
-
-//        Assert.assertEquals(WorkFlowElectron.createTodos(), expectedAmountofTodos);
-
-
+        Verfications.verifyEquals(WorkFlowElectron.createFourTodos(), expectedAmountofTodos);
     }
 
-    @Test
+    @Test(priority = 2)
     public void checkDeleteElectron() {
-        Assert.assertEquals(WorkFlowElectron.deleteTodo(2), expectedAmountofTodosAfterDelete);
-
+        Verfications.verifyEquals(WorkFlowElectron.deleteTodo(2), expectedAmountofTodosAfterDelete);
     }
 
-    @Test
+    @Test(priority = 3)
     public void CheckEditElectron() {
-        Assert.assertEquals(WorkFlowElectron.edit(0), expectedEditedTitle);
-
+        Verfications.verifyEquals(WorkFlowElectron.edit(0), expectedEditedTitle);
     }
 }

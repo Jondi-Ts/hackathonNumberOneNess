@@ -6,6 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="selenium pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/TodoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/TodoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowDeskTop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowDeskTop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowElectron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowElectron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/AppiumTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/AppiumTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -54,7 +66,7 @@
       <recent name="extensions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml">
+  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteMobile.xml">
     <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hackathonNumberOneNess" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteApi.xml" />
@@ -68,6 +80,16 @@
     <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteDesktop.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hackathonNumberOneNess" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteDesktop.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hackathonNumberOneNess" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteElectron.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -95,23 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hackathonNumberOneNess" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteMobile.xml" />
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteDesktop.xml" />
+        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteWeb.xml" />
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuite.xml" />
+        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" />
+        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteDesktop.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -204,5 +216,16 @@
     <MESSAGE value="DeskTop" />
     <MESSAGE value="selenium pages" />
     <option name="LAST_COMMIT_MESSAGE" value="selenium pages" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pageObjects/grafana/HomePage.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

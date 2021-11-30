@@ -90,17 +90,9 @@ public class CommonOps extends Base {
         }
         driver.get("http://localhost:3000/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         action = new Actions(driver);
-
         softAssertion = new SoftAssert();
-
-        //inital the global size
-
-
-        //sikuli
-
         myloginpage = PageFactory.initElements(driver, LoginPage.class);
         myhomepage = PageFactory.initElements(driver, HomePage.class);
         myserveradminpage = PageFactory.initElements(driver, ServerAdminPage.class);
@@ -161,10 +153,10 @@ public class CommonOps extends Base {
 
     }
 
-    // @Step
+    @Step("end web")
     public void endWeb() {
         driver.quit();
-
+        JDBC.closeDBCon();
     }
 
 
@@ -189,6 +181,7 @@ public class CommonOps extends Base {
     }
 
     //Apium start
+    @Step("init mobile")
     public void initAppium() throws MalformedURLException {
         dc.setCapability(MobileCapabilityType.UDID, MOBILE_NAME);
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, APP_PACKAGE_NAME);
@@ -200,12 +193,14 @@ public class CommonOps extends Base {
         calculatorPage.okAfterReset();
     }
 
+    @Step("End mobile")
     public void endAppium() {
         androidDriver.quit();
     }
     //Apium End
 
     //start Electorn
+    @Step("init Electron")
     public void initElectron() {
         System.setProperty(CHROME_DRIVER, DRIVER_LOCATION);
         opt = new ChromeOptions();
@@ -218,6 +213,7 @@ public class CommonOps extends Base {
         electronWebDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
+    @Step("end electron")
     public void endElectron() {
         Uninterruptibles.sleepUninterruptibly(4, TimeUnit.SECONDS);
         electronWebDriver.quit();
@@ -226,6 +222,7 @@ public class CommonOps extends Base {
     //End Electron
 
     //start api init
+    @Step("init api")
     public void initApi() {
         RestAssured.baseURI = urlApi;
         httpRequest = RestAssured.given().auth().preemptive().basic("admin", "admin");

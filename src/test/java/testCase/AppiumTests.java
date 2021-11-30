@@ -2,31 +2,21 @@ package testCase;
 
 import org.testng.annotations.*;
 import Utilities.CommonOps;
-import org.testng.Assert;
 import workFlows.WorkFlowAppium;
-import workFlows.WorkFlowElectron;
-import workFlows.WorkFlowDeskTop;
 import extensions.Verfications;
 
 public class AppiumTests extends CommonOps {
-//Apium
-    @Test
-    public void test1() {
 
-        WorkFlowAppium.createCalculation("12000", "1", "1");
-        WorkFlowAppium.createCalculation("254345", "2", "1");
-        WorkFlowAppium.swipeAndCheckSave();
+    @Test(priority = 1)
+    public void checkSave() {
+
+        Verfications.verifyEquals(WorkFlowAppium.checkSave(), expectedCalculationsBeforeDelete);
     }
 
-   @Test
-    public void test2() {
-
-        WorkFlowAppium.checkDelete();
+    @Test(priority = 2)
+    public void checkDelete() {
+        Verfications.verifyEquals(WorkFlowAppium.checkDelete(), expectedCalculationsAfterDelete);
     }
-    //Appium
-
-
-
 
 
 }

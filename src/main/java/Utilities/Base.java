@@ -44,7 +44,7 @@ public class Base {
     protected static NewUserPage mynewuserpage;
     protected static UserInfoPage myuserinfopage;
     protected static DataSourcePage myDataPage;
-    protected static  AddDataSourcePage mydspage;
+    protected static AddDataSourcePage mydspage;
 
     protected static int expectedsizeofrows;
     protected static int sizeofuserstable;
@@ -52,7 +52,7 @@ public class Base {
     protected static String name;
     protected static String Editname;
     protected static String search;
-    protected static String expectedTitle="Welcome to Grafana";
+    protected static String expectedTitle = "Welcome to Grafana";
 
 
     protected static Screen screen;
@@ -64,9 +64,9 @@ public class Base {
     protected static String urlKeysSuffix = "/api/auth/keys";
     protected static RequestSpecification httpRequest;
     protected static Response response;
-    protected  static JSONObject params;
+    protected static JSONObject params;
     protected static JsonPath jp;
-    protected static  String apiKey = "eyJrIjoiSzBLRGtGMFlmUDJCOEVmVjdIdW0wVk5NQlVuc3ZjU0giLCJuIjoiYXBpS2V5IiwiaWQiOjF9";
+    protected static String apiKey = "eyJrIjoiSzBLRGtGMFlmUDJCOEVmVjdIdW0wVk5NQlVuc3ZjU0giLCJuIjoiYXBpS2V5IiwiaWQiOjF9";
 //finish api
 
     //assert
@@ -91,7 +91,9 @@ public class Base {
 
     //po pages
     protected static CalculatorPage calculatorPage;
-   //appium end
+    protected static int expectedCalculationsAfterDelete = 1;
+    protected static int expectedCalculationsBeforeDelete = 2;
+    //appium end
 
     //desktop
     protected static WindowsDriver driverdesktop;

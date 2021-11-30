@@ -36,7 +36,7 @@ public class CalculatorPage extends Base {
     @AndroidFindBy(xpath = "//*[@id='btnDel']")
     private WebElement delete_btn;
     @AndroidFindBy(xpath = "//*[@id='btnDel']")
-    private List<WebElement> delete_btns;
+    public List<WebElement> delete_btns;
     @AndroidFindBy(xpath = "//*[@text='OK']")
     private WebElement confirm_delete_btn;
     @AndroidFindBy(xpath = "//*[@text='Cancel']")
@@ -63,22 +63,17 @@ public class CalculatorPage extends Base {
         swipeScreen(Direction.LEFT);
     }
 
-    public void checkSaved() {
-        Assert.assertEquals(delete_btns.size(), 2, "no saved calculations");
 
-    }
-
-    public void checkDeleted() {
+    public void delete() {
         delete_btn.click();
         confirm_delete_btn.click();
-        Assert.assertEquals(delete_btns.size(), 1, "no saved calculations");
+
 
     }
 
     public void okAfterReset() {
         after_reset_ok_btn.click();
     }
-
 
 
     public void swipeScreen(Direction dir) {
@@ -100,7 +95,7 @@ public class CalculatorPage extends Base {
 
         // init start point = center of screen
         //original from center  pointOptionStart = PointOption.point(dims.width / 2, dims.height / 2);
-        pointOptionStart = PointOption.point(dims.width -10, dims.height / 2);
+        pointOptionStart = PointOption.point(dims.width - 10, dims.height / 2);
 
         switch (dir) {
             case DOWN: // center of footer
@@ -144,6 +139,6 @@ public class CalculatorPage extends Base {
         UP,
         DOWN,
         LEFT,
-        RIGHT;
+        RIGHT
     }
 }

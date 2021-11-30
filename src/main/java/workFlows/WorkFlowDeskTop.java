@@ -2,10 +2,11 @@ package workFlows;
 
 import Utilities.CommonOps;
 import extensions.DeskTopAction;
+import io.qameta.allure.Step;
 import org.testng.Assert;
 
 public class WorkFlowDeskTop extends CommonOps {
-
+@Step("Desktop calculator addition ")
     public static void Addition(){
 
         DeskTopAction.Click( calc.btn_C);

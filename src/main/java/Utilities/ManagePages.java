@@ -32,7 +32,7 @@ public class ManagePages extends Base {
         todoPage = PageFactory.initElements(electronWebDriver, TodoPage.class);
     }
 
-    @Step("init electronPage")
+    @Step("init appiumpages")
     public static void initAppium() {
         calculatorPage = new CalculatorPage(androidDriver);
         androidDriver.resetApp();
