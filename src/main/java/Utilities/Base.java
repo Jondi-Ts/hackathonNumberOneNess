@@ -54,7 +54,7 @@ public class Base {
 
 
     protected static Screen screen;
-    protected static String sikulipath = "C:\\Automation\\HackathonNumberOne\\ImagesRepository";
+    protected static String sikulipath = "C:\\Automation\\Hacakton\\hackathonNumberOneNess\\ImagesRepository";
 
 
     //Rest API
