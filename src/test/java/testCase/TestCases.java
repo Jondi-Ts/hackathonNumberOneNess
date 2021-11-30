@@ -5,6 +5,7 @@ import Utilities.CommonOps;
 import org.testng.Assert;
 import workFlows.WorkFlowAppium;
 import workFlows.WorkFlowElectron;
+import extensions.Verfications;
 
 public class TestCases extends CommonOps {
 //Apium
@@ -26,7 +27,14 @@ public class TestCases extends CommonOps {
     //Electron
     @Test
     public void checkAddElectron() {
-        Assert.assertEquals(WorkFlowElectron.createTodos(), expectedAmountofTodos);
+
+        expectedAmountofTodos = 4;
+
+        int actual = WorkFlowElectron.createTodos();
+
+        Verfications.verifyEquals(actual, expectedAmountofTodos);
+
+//        Assert.assertEquals(WorkFlowElectron.createTodos(), expectedAmountofTodos);
 
 
     }

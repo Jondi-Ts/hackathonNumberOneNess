@@ -3,4 +3,9 @@
     <url>http://localhost:3000</url>
     <urlAppium>1</urlAppium>
 
+<!--    web, api. mobile, electron, desktop-->
+    <PlatformName>web</PlatformName>
+
+<!--    chrome, firefox, edge-->
+    <BrowserName>firefox</BrowserName>
 </numberone>
