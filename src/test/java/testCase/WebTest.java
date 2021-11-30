@@ -11,14 +11,14 @@ import static org.testng.Assert.assertEquals;
 public class WebTest extends CommonOps {
 
 
-    @Test
+    @Test(priority = 1)
     public  void loginTest()
     {
         WorkFlowWeb.login();
         Verfications.verifyEquals(myhomepage.getusTitle().getText(),expectedTitle);
     }
 
-    @Test
+    @Test(priority = 2)
     public  void CreateUserTest()
     {
       WorkFlowWeb.CreateUser();
@@ -26,7 +26,7 @@ public class WebTest extends CommonOps {
 
     }
 
-    @Test
+    @Test(priority = 3)
     public  void EditUserTest()
     {
         WorkFlowWeb.CreateUser();
@@ -35,7 +35,7 @@ public class WebTest extends CommonOps {
 
     }
 
-    @Test
+    @Test(priority = 4)
     public  void  DataSourceTest()
     {
         WorkFlowWeb.DataSource();
@@ -43,13 +43,13 @@ public class WebTest extends CommonOps {
 
     }
 
-    @Test
+    @Test(priority = 5)
     public  void   SeveniconTest()
     {
         WorkFlowWeb.Sevenicon();
     }
 
-    @Test
+    @Test(priority = 6)
     public  void SikuliTest() throws FindFailed {
         WorkFlowWeb.sikuli();
     }

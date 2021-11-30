@@ -60,10 +60,14 @@ public class Base {
 
 
     //Rest API
-    protected static RequestSpecification request;
+    protected static String urlApi = "http://localhost:3000";
+    protected static String urlKeysSuffix = "/api/auth/keys";
+    protected static RequestSpecification httpRequest;
     protected static Response response;
-    protected static JSONObject parames;
+    protected  static JSONObject params;
     protected static JsonPath jp;
+    protected static  String apiKey = "eyJrIjoiSzBLRGtGMFlmUDJCOEVmVjdIdW0wVk5NQlVuc3ZjU0giLCJuIjoiYXBpS2V5IiwiaWQiOjF9";
+//finish api
 
     //assert
     protected static SoftAssert softassert;
