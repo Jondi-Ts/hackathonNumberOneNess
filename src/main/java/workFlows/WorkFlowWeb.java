@@ -24,13 +24,13 @@ public class WorkFlowWeb extends CommonOps {
         Uninterruptibles.sleepUninterruptibly(4, TimeUnit.SECONDS);
         myloginpage.Clickskip();
         Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
-        assertEquals(myhomepage.getusTitle().getText(),expectedTitle, "error in log in");
+
 
     }
 
 
     @Step("create new user")
-    public void CreateUser() {
+    public static void CreateUser() {
         movetoServerAdminPage();
         myserveradminpage.Clicknewuser();
         Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
@@ -44,11 +44,11 @@ public class WorkFlowWeb extends CommonOps {
         mynewuserpage.Clickcreate();
         sizeofuserstable++;
         System.out.println("size " + sizeofuserstable);
-        assertEquals(sizeofuserstable, expectedsizeofrows + 1, "error in create new user");
+
     }
 
     @Step("edit user")
-    public void EditUser() {
+    public static void EditUser() {
 
         WebElement row = myserveradminpage.getrow();
         WebElement mo = myserveradminpage.getnamemo();
@@ -57,17 +57,16 @@ public class WorkFlowWeb extends CommonOps {
         action.doubleClick().build().perform();
         Uninterruptibles.sleepUninterruptibly(7, TimeUnit.SECONDS);
         //info pages
-        String str = "nana";
-        myuserinfopage.editname(str);
+        myuserinfopage.editname(Editname);
         //back to home
         myhomepage.clickonUsers();
         Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
-        assertEquals(myserveradminpage.getEditName().getText(), str);
+
 
     }
 
     @Step("find mysql in data source")
-    public void DataSource() {
+    public static  void DataSource() {
         Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
         WebElement c = myhomepage.getconfigBtnBtn();
         WebElement d = myhomepage.getdataSourceBtn();
@@ -77,20 +76,20 @@ public class WorkFlowWeb extends CommonOps {
         Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
         myDataPage.ClickAdd();
         Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
-        String search="MySQL";
+
         mydspage.searchFilter(search);
         Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
-        assertEquals(mydspage.getSpan().getText(),search,"not found");
+
     }
 
     @Step("chack if there is 7 icon")
-    public void Sevenicon() {
+    public static void Sevenicon() {
         assertEquals(myhomepage.getSizeBar(),7);
 
     }
 
     @Test
-    public  void test08() throws FindFailed {
+    public static void sikuli() throws FindFailed {
         screen.click(sikulipath + "s.png");
         Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
 

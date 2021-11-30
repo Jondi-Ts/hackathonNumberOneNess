@@ -50,6 +50,8 @@ public class Base {
     protected static int sizeofuserstable;
     protected static List<WebElement> rows;
     protected static String name;
+    protected static String Editname;
+    protected static String search;
     protected static String expectedTitle="Welcome to Grafana";
 
 

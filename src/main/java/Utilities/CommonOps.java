@@ -67,6 +67,8 @@ public class CommonOps extends Base {
         expectedsizeofrows = myserveradminpage.getrows().size();
         rows = myserveradminpage.getrows();
         name = "mory";
+        Editname="nana";
+        search="MySQL";
 
         JDBC.initSQLConnection();
         //sikuli
