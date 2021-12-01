@@ -12,8 +12,9 @@ public class UIActions extends CommonOps {
 
 
     public static void Click(WebElement elem) {
-        wait.until(ExpectedConditions.elementToBeClickable(elem));
+
         elem.click();
+       // wait.until(ExpectedConditions.elementToBeClickable(elem));
     }
 
     public static void SendKeys(WebElement elem, String str) {
@@ -31,11 +32,6 @@ public class UIActions extends CommonOps {
 
     public static void moveToandDoubleClick(WebElement elem1, WebElement elem2) {
         action.moveToElement(elem1).moveToElement(elem2).build().perform();
-        action.doubleClick().build().perform();
-    }
-
-    public static void moveToandDoubleClick(WebElement elem1) {
-        action.moveToElement(elem1).build().perform();
         action.doubleClick().build().perform();
     }
 

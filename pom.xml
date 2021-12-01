@@ -153,6 +153,9 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>TestNGSuiteMobile.xml</suiteXmlFile>
                             </suiteXmlFiles>
+                            <argLine>
+                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                            </argLine>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -170,6 +173,9 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>TestNGSuiteElectron.xml</suiteXmlFile>
                             </suiteXmlFiles>
+                            <argLine>
+                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                            </argLine>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -187,6 +193,9 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>TestNGSuiteWeb.xml</suiteXmlFile>
                             </suiteXmlFiles>
+                            <argLine>
+                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                            </argLine>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -204,6 +213,9 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>TestNGSuiteApi.xml</suiteXmlFile>
                             </suiteXmlFiles>
+                            <argLine>
+                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                            </argLine>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -221,6 +233,9 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>TestNGSuiteDesktop.xml</suiteXmlFile>
                             </suiteXmlFiles>
+                            <argLine>
+                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                            </argLine>
                         </configuration>
                     </plugin>
                 </plugins>

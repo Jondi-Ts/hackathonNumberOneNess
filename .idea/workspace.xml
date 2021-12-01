@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="After base Cleaning and common ops">
-      <change afterPath="$PROJECT_DIR$/src/main/java/extensions/MobileActions.java" afterDir="false" />
+    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="changed appium and chekd workflows">
+      <change afterPath="$PROJECT_DIR$/target/classes/Utilities/DDT/ApiListeners.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Utilities/ParameterContainer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-testCase.WebTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ParameterContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ParameterContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +65,7 @@
       <recent name="extensions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml">
+  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteWeb.xml">
     <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hackathonNumberOneNess" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteApi.xml" />
@@ -113,10 +118,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteWeb.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteDesktop.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml" />
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteWeb.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteMobile.xml" />
       </list>
     </recent_temporary>
@@ -228,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638381586909</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="changed appium and chekd workflows">
+      <created>1638383533664</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638383533664</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,7 +267,8 @@
     <MESSAGE value="added Jenkins profiles" />
     <MESSAGE value="Api was added and chekded" />
     <MESSAGE value="After base Cleaning and common ops" />
-    <option name="LAST_COMMIT_MESSAGE" value="After base Cleaning and common ops" />
+    <MESSAGE value="changed appium and chekd workflows" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed appium and chekd workflows" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
