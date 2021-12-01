@@ -44,6 +44,7 @@ public class Base {
     protected static UserInfoPage myuserinfopage;
     protected static DataSourcePage myDataPage;
     protected static AddDataSourcePage mydspage;
+    protected static TabPage myTab;
 
     protected static int expectedsizeofrows;
     protected static int sizeofuserstable;
@@ -55,7 +56,7 @@ public class Base {
 
 
     protected static Screen screen;
-    protected static String sikulipath = "C:\\Automation\\Hacakton\\hackathonNumberOneNess\\ImagesRepository";
+    protected static String sikulipath = "C:\\Automation\\HackathonNumberOne\\ImagesRepository\\";
 
 
     //Rest API

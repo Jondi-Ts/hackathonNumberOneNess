@@ -29,13 +29,29 @@ public class WebTest extends CommonOps {
     @Test(priority = 3)
     public  void EditUserTest()
     {
-        WorkFlowWeb.CreateUser();
+        WorkFlowWeb.EditUser();
 
         Verfications.verifyEquals(myserveradminpage.getEditName().getText(),Editname);
 
     }
+    @Test(priority=4 )
+    public  void DeleteUserTest()
+    {
+        WorkFlowWeb.deleteUser();;
 
-    @Test(priority = 4)
+        //Verfications.verifyEquals(myserveradminpage.getEditName().getText(),Editname);
+
+    }
+
+    @Test(priority=5)
+    public  void SoftAssertTest()
+    {
+        WorkFlowWeb.softAssertTest();
+
+    }
+
+
+    @Test(priority = 6)
     public  void  DataSourceTest()
     {
         WorkFlowWeb.DataSource();
@@ -43,21 +59,15 @@ public class WebTest extends CommonOps {
 
     }
 
-    @Test(priority = 5)
+    @Test(priority = 7)
     public  void   SeveniconTest()
     {
         WorkFlowWeb.Sevenicon();
     }
 
-    @Test(priority = 6)
+    @Test(priority = 8)
     public  void SikuliTest() throws FindFailed {
         WorkFlowWeb.sikuli();
     }
-
-
-
-
-
-
 
 }

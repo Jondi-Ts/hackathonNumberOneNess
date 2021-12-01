@@ -23,8 +23,24 @@ public class ServerAdminPage {
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"reactRoot\"]/div/main/div[3]/div/div[1]/div/div[2]/div[2]/table/tbody/tr[2]/td[2]/a")
     private WebElement namemo;
+
     @FindBy(how = How.XPATH, using = "//*[@id=\"reactRoot\"]/div/main/div[3]/div/div[1]/div/div[2]/div[2]/table/tbody/tr[2]/td[4]/a")
     private WebElement editname;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"reactRoot\"]/div/main/div[3]/div/div[1]/div/div[2]/div[1]/div[2]/button[1]/span")
+    private WebElement deleteBtn;
+
+    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/div[2]/div[2]/div/div[2]/button")
+    private WebElement deleteBtn2;
+
+
+
+    public void Clickdelete() {
+        deleteBtn.click();;
+    }
+    public void Clickdelete2() {
+        deleteBtn2.click();;
+    }
 
 
 

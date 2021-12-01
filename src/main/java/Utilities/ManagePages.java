@@ -19,6 +19,7 @@ public class ManagePages extends Base {
         myuserinfopage = PageFactory.initElements(driver, UserInfoPage.class);
         myDataPage = PageFactory.initElements(driver, DataSourcePage.class);
         mydspage = PageFactory.initElements(driver, AddDataSourcePage.class);
+        myTab=PageFactory.initElements(driver, TabPage.class);
     }
 
     @Step("init DeskTop pages")

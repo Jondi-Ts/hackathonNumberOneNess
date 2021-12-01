@@ -14,10 +14,7 @@ public class WorkFlowDeskTop extends CommonOps {
         DeskTopAction.Click( calc.btn_plus);
         DeskTopAction.Click(  calc.btn_2);
         DeskTopAction.Click(  calc.btn_equal);
-//        System.out.println(calc.result());
-//        Assert.assertTrue(calc.result()==9);
 
     }
-
 
 }
