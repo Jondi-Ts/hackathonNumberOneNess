@@ -31,11 +31,10 @@ public class Base {
     protected static WebDriver driver;
     protected static Actions action;
     //put the url in xml
-    protected static String url;
+
 
     //web-selenium
-    protected static WebDriverWait wait;
-    private WebDriver seleniumdriver;
+
     protected static SoftAssert softAssertion;
 
     protected static LoginPage myloginpage;
@@ -69,11 +68,9 @@ public class Base {
     protected static String apiKey = "eyJrIjoiSzBLRGtGMFlmUDJCOEVmVjdIdW0wVk5NQlVuc3ZjU0giLCJuIjoiYXBpS2V5IiwiaWQiOjF9";
 //finish api
 
-    //assert
-    protected static SoftAssert softassert;
 
-    //oop
-    //protected static RioPage rioPage;
+
+
 
     //appium start
     //driver
@@ -89,20 +86,19 @@ public class Base {
     //Desired Capabilities
     protected static DesiredCapabilities dc = new DesiredCapabilities();
 
-    //po pages
+   //expectations
     protected static CalculatorPage calculatorPage;
     protected static int expectedCalculationsAfterDelete = 1;
     protected static int expectedCalculationsBeforeDelete = 4;
-    //appium end
+
 
     //desktop
-    protected static WindowsDriver driverdesktop;
+
     protected DesiredCapabilities deskTopCapabilities;
     protected final String calcApp = "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App";
     protected static CalculatorPage2 calc;
 
-    //elektron start
-    protected static WebDriver electronWebDriver;
+    //electron start
     protected static ChromeOptions opt;
     protected static DesiredCapabilities electronCapabilities;
 

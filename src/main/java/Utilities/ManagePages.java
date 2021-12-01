@@ -29,13 +29,14 @@ public class ManagePages extends Base {
 
     @Step("init electronPage")
     public static void initElectron() {
-        todoPage = PageFactory.initElements(electronWebDriver, TodoPage.class);
+        todoPage = PageFactory.initElements(driver, TodoPage.class);
     }
 
     @Step("init appiumpages")
     public static void initAppium() {
-        calculatorPage = new CalculatorPage(androidDriver);
         androidDriver.resetApp();
         calculatorPage.okAfterReset();
+        calculatorPage = new CalculatorPage(androidDriver);
+
     }
 }

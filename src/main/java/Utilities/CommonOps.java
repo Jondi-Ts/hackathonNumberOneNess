@@ -92,13 +92,7 @@ public class CommonOps extends Base {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         action = new Actions(driver);
         softAssertion = new SoftAssert();
-        myloginpage = PageFactory.initElements(driver, LoginPage.class);
-        myhomepage = PageFactory.initElements(driver, HomePage.class);
-        myserveradminpage = PageFactory.initElements(driver, ServerAdminPage.class);
-        mynewuserpage = PageFactory.initElements(driver, NewUserPage.class);
-        myuserinfopage = PageFactory.initElements(driver, UserInfoPage.class);
-        myDataPage = PageFactory.initElements(driver, DataSourcePage.class);
-        mydspage = PageFactory.initElements(driver, AddDataSourcePage.class);
+        ManagePages.initWeb();
         sizeofuserstable = myserveradminpage.getrows().size();
         expectedsizeofrows = myserveradminpage.getrows().size();
         rows = myserveradminpage.getrows();
@@ -115,12 +109,13 @@ public class CommonOps extends Base {
         deskTopCapabilities = new DesiredCapabilities();
         deskTopCapabilities.setCapability("app", calcApp);
         driver = new WindowsDriver(new URL("http://127.0.0.1:4723"), deskTopCapabilities);
+        ManagePages.initDeskTop();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
     public void endDesktop() {
-        driverdesktop.quit();
+        driver.quit();
     }
 
 
@@ -187,9 +182,7 @@ public class CommonOps extends Base {
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, MAIN_ACTIVITY);
         androidDriver = new AndroidDriver<>(new URL(APPIUM_URL), dc);
         androidDriver.setLogLevel(Level.INFO);
-        calculatorPage = new CalculatorPage(androidDriver);
-        androidDriver.resetApp();
-        calculatorPage.okAfterReset();
+        ManagePages.initAppium();
     }
 
     @Step("End mobile")
@@ -207,15 +200,15 @@ public class CommonOps extends Base {
         electronCapabilities = new DesiredCapabilities();
         electronCapabilities.setCapability(CHROME_OPTIONS_STRING, opt);
         electronCapabilities.setBrowserName(CHROME);
-        electronWebDriver = new ChromeDriver(electronCapabilities);
-        todoPage = PageFactory.initElements(electronWebDriver, TodoPage.class);
-        electronWebDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver = new ChromeDriver(electronCapabilities);
+        ManagePages.initElectron();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @Step("end electron")
     public void endElectron() {
         Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
-        electronWebDriver.quit();
+        driver.quit();
     }
 
     //End Electron

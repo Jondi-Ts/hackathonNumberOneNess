@@ -30,7 +30,7 @@ public class TodoPage extends Base {
 
     @Step("edit todo name")
     public void edit(int editTodoIndex) {
-        action = new Actions(electronWebDriver);
+        action = new Actions(driver);
         action.moveToElement(list_of_todos.get(editTodoIndex)).doubleClick();
         action.sendKeys(Keys.chord(Keys.CONTROL, "a")).sendKeys(Keys.BACK_SPACE).sendKeys(expectedEditedTitle);
         action.sendKeys(Keys.ENTER).build().perform();
