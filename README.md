@@ -3,12 +3,12 @@ Authors: Nave Ben-Elyahu, Mimi Isaak, Jondi Tsveniashvili
 
 
 Mentors: Yoni Flenner, Rowan Kendal. 
+
 Year : 2021 
+
 Full Test automation project 
 
 Platforms: Web, Desktop, Api, Moible, Electron.
-
-
 
 Java language,
  Selenium,
