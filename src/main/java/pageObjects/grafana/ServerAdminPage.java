@@ -54,15 +54,6 @@ public class ServerAdminPage {
     public  WebElement getDeleteBtn2() { return deleteBtn2; }
 
 
-    public void Clickdelete() { deleteBtn.click(); }
-
-    public void Clickdelete2() { deleteBtn2.click(); }
-
-
-    public void sizeofrows()
-    {
-        System.out.println("size of rows"+rows.size());
-    }
 
 
 }

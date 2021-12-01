@@ -37,9 +37,9 @@ public class WebTest extends CommonOps {
     @Test(priority=4 )
     public  void DeleteUserTest()
     {
-        WorkFlowWeb.deleteUser();;
+        WorkFlowWeb.deleteUser();
+        Verfications.verifyEquals(sizeofuserstable,exceptedrow);
 
-      Verfications.verifyEquals(myserveradminpage.getEditName().getText(),Editname);
 
     }
 
@@ -71,7 +71,8 @@ public class WebTest extends CommonOps {
     @Test(priority = 8)
     public  void SikuliTest() throws FindFailed {
 
-        Verfications.verifyTrue(WorkFlowWeb.sikuli());
+
+       Verfications.verifyTrue(  WorkFlowWeb. Sikuli());
     }
 
 }
