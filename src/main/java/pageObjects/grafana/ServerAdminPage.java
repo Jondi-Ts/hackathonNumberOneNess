@@ -33,23 +33,6 @@ public class ServerAdminPage {
     @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/div[2]/div[2]/div/div[2]/button")
     private WebElement deleteBtn2;
 
-
-
-    public void Clickdelete() {
-        deleteBtn.click();;
-    }
-    public void Clickdelete2() {
-        deleteBtn2.click();;
-    }
-
-
-
-    //צריך לקבל פרמטר ועליו ללחוץ
-    public void Clicknewuser() {
-        //  wait.until(ExpectedConditions.elementToBeClickable(element)).click();
-        newuserBtn.click();
-    }
-
     public List<WebElement> getrows()
     {
         return rows;
@@ -59,16 +42,22 @@ public class ServerAdminPage {
     {
         return rowtow;
     }
-    public WebElement getnamemo()
-    {
 
-        return namemo;
-    }
-    public WebElement getEditName()
-    {
+    public WebElement getnamemo() { return namemo; }
 
-        return editname;
-    }
+    public WebElement getEditName() { return editname; }
+
+    public  WebElement getNewuserBtn() { return newuserBtn; }
+
+    public  WebElement getDeleteBtn() { return deleteBtn; }
+
+    public  WebElement getDeleteBtn2() { return deleteBtn2; }
+
+
+    public void Clickdelete() { deleteBtn.click(); }
+
+    public void Clickdelete2() { deleteBtn2.click(); }
+
 
     public void sizeofrows()
     {

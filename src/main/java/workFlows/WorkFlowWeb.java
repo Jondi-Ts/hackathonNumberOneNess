@@ -3,6 +3,7 @@ package workFlows;
 import Utilities.CommonOps;
 import Utilities.JDBC;
 import com.google.common.util.concurrent.Uninterruptibles;
+import extensions.UIActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.sikuli.script.FindFailed;
@@ -17,14 +18,15 @@ public class WorkFlowWeb extends CommonOps {
     @Step("log in to grafana")
 
     public static void login() {
-
         //take the date from mysqldb
-        myloginpage.sendkeys1(JDBC.getCredentials().get(0));
-        myloginpage.sendkeys2(JDBC.getCredentials().get(1));
-        myloginpage.Clicklogin();
-        Uninterruptibles.sleepUninterruptibly(4, TimeUnit.SECONDS);
-        myloginpage.Clickskip();
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
+
+        UIActions.SendKeys( myloginpage.getUserNameBtn(),JDBC.getCredentials().get(0));
+        UIActions.SendKeys( myloginpage.getCurrentPasswordBtn(),JDBC.getCredentials().get(1));
+
+        UIActions.Click(myloginpage.getLogInBtn());
+
+        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+        UIActions.Click(myloginpage.getSkipBtn());
 
 
     }
@@ -33,76 +35,89 @@ public class WorkFlowWeb extends CommonOps {
     @Step("create new user")
     public static void CreateUser() {
 
-        //Routing to Earver Admin Page
+        //Routing to Server Admin Page
         movetoServerAdminPage();
 
         //click om button "new user"
-        myserveradminpage.Clicknewuser();
+        UIActions.Click( myserveradminpage.getNewuserBtn());
 
-        Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
+        //inset data for user
+        insertData();
 
-        //new user page
-        // db----ddt
-        mynewuserpage.sendkeys1(name);
-        mynewuserpage.sendkeys2("m@gmail.con");
-        mynewuserpage.sendkeys3("momo");
-        mynewuserpage.sendkeys4("988761");
-        mynewuserpage.Clickcreate();
-        sizeofuserstable++;
-        System.out.println("size " + sizeofuserstable);
+
+
 
     }
+     @Step("insert data for user")
+     public static void insertData() {
+
+        UIActions.SendKeys(mynewuserpage.getNameInput(),loginName);
+        UIActions.SendKeys(mynewuserpage.getEmailInput(),email);
+        UIActions.SendKeys(mynewuserpage.getUsernameInput(),name);
+        UIActions.SendKeys(mynewuserpage.getPasswordInput(),passworduser);
+        UIActions.Click(mynewuserpage.getCreateBtn());
+         sizeofuserstable++;
+         System.out.println("size " + sizeofuserstable);
+     }
 
     @Step("edit user")
     public static void EditUser() {
+        //move to the row- and double click
+        UIActions.moveToandDoubleClick( myserveradminpage.getrow(),myserveradminpage.getnamemo());
 
-        WebElement row = myserveradminpage.getrow();
-        WebElement mo = myserveradminpage.getnamemo();
-        Uninterruptibles.sleepUninterruptibly(7, TimeUnit.SECONDS);
-        action.moveToElement(row).moveToElement(mo).build().perform();
-        action.doubleClick().build().perform();
-        Uninterruptibles.sleepUninterruptibly(7, TimeUnit.SECONDS);
         //info pages
-        myuserinfopage.editname(Editname);
+        editname(Editname);
 
         //back to home
-        myhomepage.clickonUsers();
+        UIActions.Click(  myhomepage.getUsers());
 
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
+    }
 
-
+    @Step("edit name")
+    public static void editname(String name)
+    {
+        UIActions.Click(myuserinfopage.getEditnameBtnBtn());
+        UIActions.ClearInput(myuserinfopage.getInputname());
+        UIActions.SendKeys(myuserinfopage.getInputname(),name);
+        UIActions.Click(myuserinfopage.getSaveNameBtn());
     }
 
     @Step("find mysql in data source")
     public static  void DataSource() {
 
-        Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
-        WebElement c = myhomepage.getconfigBtnBtn();
-        WebElement d = myhomepage.getdataSourceBtn();
-        action.moveToElement(c).click();
-        action.moveToElement(d).click();
-        action.build().perform();
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
-        myDataPage.ClickAdd();
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
+        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+        UIActions.moveToandClick(myhomepage.getConfigBtn());
+        UIActions.moveToandClick(myhomepage.getDataSourceBtn());
 
-        mydspage.searchFilter(search);
-        Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
+        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+
+        UIActions.Click(myDataPage.getAddDataBtn());
+        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+
+        searchFilter(search);
+        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+
+    }
+
+   @Step("search db in filter")
+    public static void searchFilter(String search) {
+        UIActions.Click(mydspage.getFilterinput());
+        UIActions.SendKeys(mydspage.getFilterinput(),search);
 
     }
 
     @Step("chack if there is 7 icon")
-    public static void Sevenicon() {
-        ///return 7
-        //ex--7
-        assertEquals(myhomepage.getSizeBar(),7);
+    public static int Sevenicon() {
+
+        return myhomepage.getBar().size();
+
 
     }
 
     @Step("sikuli test- ")
-    public static void sikuli() throws FindFailed {
+    public static Boolean sikuli() throws FindFailed {
 
-        Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
+        Uninterruptibles.sleepUninterruptibly(1500, TimeUnit.MILLISECONDS);
         //click on Shiled icon
         screen.click(sikulipath + "shiled.png");
 
@@ -114,10 +129,10 @@ public class WorkFlowWeb extends CommonOps {
 
         if(screen.exists(sikulipath + "log.png")!=null)
         {
-            System.out.println("find!");
+           return true;
         }
         else {
-            System.out.println("not found");
+           return false;
         }
 
     }
@@ -128,20 +143,13 @@ public class WorkFlowWeb extends CommonOps {
     @Step("delete user ")
     public static void deleteUser()
     {
-        WebElement row = myserveradminpage.getrow();
-        WebElement mo = myserveradminpage.getnamemo();
+        UIActions.moveToandDoubleClick( myserveradminpage.getrow(),myserveradminpage.getnamemo());
+        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
 
-        Uninterruptibles.sleepUninterruptibly(7, TimeUnit.SECONDS);
+        UIActions.Click(  myserveradminpage.getDeleteBtn());
+        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
 
-        action.moveToElement(row).moveToElement(mo).build().perform();
-        action.doubleClick().build().perform();
-
-        Uninterruptibles.sleepUninterruptibly(7, TimeUnit.SECONDS);
-
-        myserveradminpage.Clickdelete();
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
-        myserveradminpage.Clickdelete2();
-
+        UIActions.Click(  myserveradminpage.getDeleteBtn2());
 
     }
 
@@ -149,13 +157,10 @@ public class WorkFlowWeb extends CommonOps {
     @Step("softAssert on server admin ")
     public static void softAssertTest()
     {
-        Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
-        WebElement admin = myhomepage.getserverAdminBtn();
-        WebElement user = myhomepage.getuserBtn();
+        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+        UIActions.moveToandClick(myhomepage.getServerAdminBtn());
+        UIActions.moveToandClick(myhomepage.getUserBtn());
 
-        action.moveToElement(admin).click();
-        action.moveToElement(user).click();
-        action.build().perform();
 
         WebElement users =myTab.getusers();
         WebElement orgs = myTab.getuorgs();
@@ -180,13 +185,11 @@ public class WorkFlowWeb extends CommonOps {
     @Step("navigate to server admin page")
     public static  void movetoServerAdminPage() {
 
-        Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
-        WebElement admin = myhomepage.getserverAdminBtn();
-        WebElement user = myhomepage.getuserBtn();
-        action.moveToElement(admin).click();
-        action.moveToElement(user).click();
-        action.build().perform();
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
+        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+        UIActions.moveToandClick(myhomepage.getServerAdminBtn());
+        UIActions.moveToandClick(myhomepage.getUserBtn());
+        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+
     }
 
 

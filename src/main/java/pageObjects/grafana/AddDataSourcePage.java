@@ -12,11 +12,16 @@ public class AddDataSourcePage {
     private WebElement mysolSpan ;
 
 
-public WebElement getSpan(){
-    return mysolSpan;
-}
+    public WebElement getFilterinput() {
+        return filterinput;
+    }
+
+    public WebElement getMysolSpan() {
+        return mysolSpan;
+    }
 
 
+    //step in work flow
     public void searchFilter(String search) {
      filterinput.click();
       filterinput.sendKeys(search);

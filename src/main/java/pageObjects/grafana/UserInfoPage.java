@@ -28,40 +28,39 @@ public class UserInfoPage {
     private WebElement saveNameBtn ;
 
 
-
-
-
-    public void Clicknewuser() {
-      deleteBtn.click();
-    }
-
-    public void editnameBtn() {
-        editnameBtn.click();
-    }
-    public void editemailBtn() {
-        editemailBtn.click();
-    }
-    public void editusernameBtn() {
-        editusernameBtn.click();
-    }
-    public void editpasswordBtn() {
-        editpasswordBtn.click();
-    }
-    public void savename() {
-        saveNameBtn.click();
-    }
-    public  void sendkeysname(String name)
+    public WebElement getDeleteBtn()
     {
-        inputname.sendKeys(name);
+        return  deleteBtn;
     }
 
-    public  void editname(String name)
+    public WebElement getEditnameBtnBtn()
     {
-        editnameBtn();
-        inputname.clear();
-        sendkeysname(name);
-        savename();
+        return  editnameBtn;
+    }
 
+    public  WebElement getEditemailBtn()
+    {
+        return  editemailBtn;
+    }
+
+    public  WebElement getEditusernameBtn()
+    {
+        return  editusernameBtn;
+    }
+
+    public  WebElement getEditpasswordBtn()
+    {
+        return  editpasswordBtn;
+    }
+
+    public  WebElement getInputname()
+    {
+        return  inputname;
+    }
+
+    public  WebElement getSaveNameBtn()
+    {
+        return  saveNameBtn;
     }
 
 

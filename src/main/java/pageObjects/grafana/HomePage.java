@@ -34,24 +34,31 @@ public class HomePage {
     private WebElement title ;
 
 
-    public  WebElement getserverAdminBtn()
-    {
-        return serverAdminBtn ;
+    public WebElement getServerAdminBtn() {
+        return serverAdminBtn;
     }
-    public  WebElement getconfigBtnBtn()
-    {
-        return configBtn ;
+
+    public WebElement getConfigBtn() {
+        return configBtn;
     }
-    public  WebElement getuserBtn()
-    {
-        return  usergBtn;
+
+    public WebElement getUserBtn() {
+        return usergBtn;
     }
-    public  WebElement getdataSourceBtn()
-    {
-        return  dataSourceBtn;
+
+    public WebElement getDataSourceBtn() {
+        return dataSourceBtn;
     }
-    public  WebElement getusTitle()
-    {
+
+    public List<WebElement> getBar() {
+        return bar;
+    }
+
+    public WebElement getUsers() {
+        return users;
+    }
+
+    public WebElement getTitle() {
         return title;
     }
 
@@ -60,10 +67,6 @@ public class HomePage {
         return bar.size();
     }
 
-    public void clickonUsers()
-    {
-        users.click();
-    }
 
 
 

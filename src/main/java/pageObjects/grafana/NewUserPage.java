@@ -21,34 +21,25 @@ public class NewUserPage {
     @FindBy(how = How.XPATH, using = "//*[@id='reactRoot']/div/main/div[3]/div/div[1]/div/div[2]/form/button/span")
     private WebElement createBtn ;
 
-    public void sendkeys1(String str) {
-        nameInput.sendKeys(str);
-    }
 
-    public void sendkeys2(String str) {
-        emailInput.sendKeys(str);
-    }
-
-    public void sendkeys3(String str) {
-        usernameInput.sendKeys(str);
-    }
-
-    public void sendkeys4(String str) {
-        passwordInput.sendKeys(str);
-    }
-
-    public void Clickcreate() {
-       createBtn.click();
-    }
-
-    public WebElement getname()
-    {
+    public WebElement getNameInput() {
         return nameInput;
     }
 
+    public WebElement getEmailInput() {
+        return emailInput;
+    }
 
+    public WebElement getUsernameInput() {
+        return usernameInput;
+    }
 
+    public WebElement getPasswordInput() {
+        return passwordInput;
+    }
 
-
+    public WebElement getCreateBtn() {
+        return createBtn;
+    }
 
 }

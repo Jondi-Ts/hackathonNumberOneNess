@@ -15,7 +15,7 @@ public class WebTest extends CommonOps {
     public  void loginTest()
     {
         WorkFlowWeb.login();
-        Verfications.verifyEquals(myhomepage.getusTitle().getText(),expectedTitle);
+       Verfications.verifyEquals(myhomepage.getTitle().getText(),expectedTitle);
     }
 
     @Test(priority = 2)
@@ -39,7 +39,7 @@ public class WebTest extends CommonOps {
     {
         WorkFlowWeb.deleteUser();;
 
-        //Verfications.verifyEquals(myserveradminpage.getEditName().getText(),Editname);
+      Verfications.verifyEquals(myserveradminpage.getEditName().getText(),Editname);
 
     }
 
@@ -55,19 +55,23 @@ public class WebTest extends CommonOps {
     public  void  DataSourceTest()
     {
         WorkFlowWeb.DataSource();
-        Verfications.verifyEquals(mydspage.getSpan().getText(),search);
+        Verfications.verifyEquals(mydspage.getMysolSpan().getText(),search);
 
     }
 
     @Test(priority = 7)
     public  void   SeveniconTest()
     {
-        WorkFlowWeb.Sevenicon();
+
+         int size=  WorkFlowWeb.Sevenicon();
+        Verfications.verifyEquals(size,expectedsizeoficons);
+
     }
 
     @Test(priority = 8)
     public  void SikuliTest() throws FindFailed {
-        WorkFlowWeb.sikuli();
+
+        Verfications.verifyTrue(WorkFlowWeb.sikuli());
     }
 
 }

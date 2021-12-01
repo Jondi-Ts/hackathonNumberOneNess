@@ -96,9 +96,13 @@ public class CommonOps extends Base {
         sizeofuserstable = myserveradminpage.getrows().size();
         expectedsizeofrows = myserveradminpage.getrows().size();
         rows = myserveradminpage.getrows();
-        name = "mory";
-        Editname = "nana";
+        loginName="group1";
+        name ="winners" ;
+        email="ness@gmail.com";
+        passworduser="1212";
+        Editname = "the best";
         search = "MySQL";
+        expectedsizeoficons=7;
         JDBC.initSQLConnection();
         screen = new Screen();
 

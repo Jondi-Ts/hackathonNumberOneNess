@@ -19,25 +19,20 @@ public class LoginPage {
     private WebElement skipBtn;
 
 
-
-    //UI ACTIONS
-    //להתשמש בפונקציות ששם
-    public void sendkeys1(String str) {
-       userNameBtn.sendKeys(str);
-    }
-    public void sendkeys2(String str) {
-        currentPasswordBtn.sendKeys(str);
+    public WebElement getUserNameBtn() {
+        return userNameBtn;
     }
 
-    ///צריך לקבל פרמטר ועליו ללחוץ
-    public void Clicklogin() {
-       logInBtn.click();
-    }
-    public void Clickskip() {
-        skipBtn.click();
+    public WebElement getCurrentPasswordBtn() {
+        return currentPasswordBtn;
     }
 
+    public WebElement getLogInBtn() {
+        return logInBtn;
+    }
 
-
+    public WebElement getSkipBtn() {
+        return skipBtn;
+    }
 
 }

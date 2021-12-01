@@ -47,9 +47,13 @@ public class Base {
     protected static TabPage myTab;
 
     protected static int expectedsizeofrows;
+    protected static int expectedsizeoficons;
     protected static int sizeofuserstable;
     protected static List<WebElement> rows;
+    protected static String loginName;
     protected static String name;
+    protected static String email;
+    protected static String passworduser;
     protected static String Editname;
     protected static String search;
     protected static String expectedTitle = "Welcome to Grafana";
