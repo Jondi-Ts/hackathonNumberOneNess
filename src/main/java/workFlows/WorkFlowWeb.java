@@ -114,29 +114,27 @@ public class WorkFlowWeb extends CommonOps {
 
     }
 
-    @Step("sikuli test- ")
-    public static Boolean sikuli() throws FindFailed {
 
-        Uninterruptibles.sleepUninterruptibly(1500, TimeUnit.MILLISECONDS);
-        //click on Shiled icon
-        screen.click(sikulipath + "shiled.png");
 
-        Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
-        //Write admin in the input
-        screen.type(sikulipath + "i.png","admin");
+    @Step("sikuli test")
+    public static boolean Sikuli(){
+        try {
+            Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+            //click on Shiled icon
+            screen.click(sikulipath + "shiled.png");
 
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
+            Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+            //Write admin in the input
+            screen.type(sikulipath + "i.png","admin");
 
-        if(screen.exists(sikulipath + "log.png")!=null)
-        {
-           return true;
+            Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+            screen.exists(sikulipath + "log.png");
+            return true;
+        } catch (FindFailed e) {
+            e.printStackTrace();
+            return false;
         }
-        else {
-           return false;
-        }
-
     }
-
 
 
     //delete
@@ -148,8 +146,9 @@ public class WorkFlowWeb extends CommonOps {
 
         UIActions.Click(  myserveradminpage.getDeleteBtn());
         Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
-
+        sizeofuserstable--;
         UIActions.Click(  myserveradminpage.getDeleteBtn2());
+
 
     }
 

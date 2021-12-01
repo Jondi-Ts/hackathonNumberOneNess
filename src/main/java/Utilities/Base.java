@@ -56,6 +56,7 @@ public class Base {
     protected static String passworduser;
     protected static String Editname;
     protected static String search;
+    protected static int exceptedrow;
     protected static String expectedTitle = "Welcome to Grafana";
 
 

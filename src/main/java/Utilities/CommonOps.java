@@ -92,7 +92,9 @@ public class CommonOps extends Base {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         action = new Actions(driver);
         softAssertion = new SoftAssert();
+
         ManagePages.initWeb();
+
         sizeofuserstable = myserveradminpage.getrows().size();
         expectedsizeofrows = myserveradminpage.getrows().size();
         rows = myserveradminpage.getrows();
@@ -102,6 +104,7 @@ public class CommonOps extends Base {
         passworduser="1212";
         Editname = "the best";
         search = "MySQL";
+        exceptedrow=0;
         expectedsizeoficons=7;
         JDBC.initSQLConnection();
         screen = new Screen();
