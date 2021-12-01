@@ -19,9 +19,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.sikuli.script.Screen;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -33,7 +31,6 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
-import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 import org.w3c.dom.Document;
 import pageObjects.calculator.CalculatorPage;
@@ -41,10 +38,12 @@ import pageObjects.grafana.*;
 import pageObjects.toDoLIst.TodoPage;
 import pageObjects.uintConverter.CalculatorPage2;
 
+
 public class CommonOps extends Base {
 
     @BeforeClass
     @Parameters({"PlatformName", "BrowserName"})
+
     public void startSession(String platformName, String browserName) throws MalformedURLException {
 
 //        if(getData("PlatformName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
@@ -215,7 +214,7 @@ public class CommonOps extends Base {
 
     @Step("end electron")
     public void endElectron() {
-        Uninterruptibles.sleepUninterruptibly(4, TimeUnit.SECONDS);
+        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
         electronWebDriver.quit();
     }
 

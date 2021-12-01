@@ -6,10 +6,9 @@ import io.qameta.allure.Step;
 public class WorkFlowElectron extends CommonOps {
     @Step("creation of four new todos and getting their amount for checking ")
     public static int createFourTodos() {
-        todoPage.makeTodo("Todo 1");
-        todoPage.makeTodo("Todo 2");
-        todoPage.makeTodo("Todo 3");
-        todoPage.makeTodo("Todo 4");
+        for (int i = 1; i <= expectedCalculationsBeforeDelete; i++) {
+            todoPage.makeTodo("Todo " + i);
+        }
         return todoPage.list_of_todos.size();
     }
 

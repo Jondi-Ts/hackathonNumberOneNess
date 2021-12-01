@@ -92,7 +92,7 @@ public class Base {
     //po pages
     protected static CalculatorPage calculatorPage;
     protected static int expectedCalculationsAfterDelete = 1;
-    protected static int expectedCalculationsBeforeDelete = 2;
+    protected static int expectedCalculationsBeforeDelete = 4;
     //appium end
 
     //desktop

@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 
 import java.io.File;
 
-public class Liseners extends CommonOps {
+public class AutomationListeners implements ITestListener  {
     public void onStart(ITestContext execution) {
         System.out.println("---------------------- Starting Execution ------------------");
     }

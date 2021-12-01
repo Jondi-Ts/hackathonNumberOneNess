@@ -4,20 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="selenium pages">
+    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="added little bit steps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteApi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteApi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteDesktop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteDesktop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteElectron.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteElectron.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteMobile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteMobile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteWeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/TodoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/TodoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowDeskTop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowDeskTop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Liseners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/AutomationListeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowElectron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowElectron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/AppiumTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/AppiumTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Liseners.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage$Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage$Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/toDoLIst/TodoPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/toDoLIst/TodoPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowDeskTop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowDeskTop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,20 +78,10 @@
       <recent name="extensions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteMobile.xml">
+  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml">
     <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hackathonNumberOneNess" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteApi.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteDesktop.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hackathonNumberOneNess" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteDesktop.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -117,13 +119,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hackathonNumberOneNess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCase" />
+      <option name="MAIN_CLASS_NAME" value="testCase.WebTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteMobile.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml" />
+        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteMobile.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteWeb.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" />
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteDesktop.xml" />
+        <item itemvalue="TestNG.WebTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +211,14 @@
       <option name="presentableId" value="LOCAL‎00007" />
       <updated>1638269294568</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added little bit steps">
+      <created>1638305534002</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638305534002</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,7 +241,8 @@
     <MESSAGE value="only file" />
     <MESSAGE value="DeskTop" />
     <MESSAGE value="selenium pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="selenium pages" />
+    <MESSAGE value="added little bit steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="added little bit steps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
