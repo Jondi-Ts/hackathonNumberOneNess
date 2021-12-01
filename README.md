@@ -1,6 +1,8 @@
 # hackathonNumberOneNess
 Authors: Nave Ben-Elyahu, Mimi Isaak, Jondi Tsveniashvili
-Mentors, Yoni Flenner, Rowan Kendal. 
+
+
+Mentors: Yoni Flenner, Rowan Kendal. 
 Year : 2021 
 Full Test automation project 
 
