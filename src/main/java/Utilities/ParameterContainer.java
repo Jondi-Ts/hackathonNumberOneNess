@@ -17,7 +17,7 @@ public class ParameterContainer extends Base {
     public static final String search = "MySQL";
     public static final int exceptedrow = 0;
     public static final String expectedTitle = "Welcome to Grafana";
-    //protected static String apiKey = "eyJrIjoiSzBLRGtGMFlmUDJCOEVmVjdIdW0wVk5NQlVuc3ZjU0giLCJuIjoiYXBpS2V5IiwiaWQiOjF9";
+
 
     //electron
     public static final int expectedAmountofTodos = 4;

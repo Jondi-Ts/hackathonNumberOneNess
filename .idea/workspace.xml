@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="Api was added and chekded">
+    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="After base Cleaning and common ops">
+      <change afterPath="$PROJECT_DIR$/src/main/java/extensions/MobileActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExternalFiles/info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExternalFiles/info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/JDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/JDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ParameterContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ParameterContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowElectron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowElectron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/AppiumTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/AppiumTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/JDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/JDBC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/WebTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/WebTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638378357276</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="After base Cleaning and common ops">
+      <created>1638381586908</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1638381586909</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +254,8 @@
     <MESSAGE value="added little bit steps" />
     <MESSAGE value="added Jenkins profiles" />
     <MESSAGE value="Api was added and chekded" />
-    <option name="LAST_COMMIT_MESSAGE" value="Api was added and chekded" />
+    <MESSAGE value="After base Cleaning and common ops" />
+    <option name="LAST_COMMIT_MESSAGE" value="After base Cleaning and common ops" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

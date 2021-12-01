@@ -20,7 +20,7 @@ public class WorkFlowElectron extends CommonOps {
         return todoPage.getList_of_todos().size();
     }
 
-    @Step("editing todo name and geting text for cheking")
+    @Step("editing todo name and getting text for checking")
     public static String edit(int editTodoIndex) {
         action = new Actions(driver);
         action.moveToElement(todoPage.getList_of_todos().get(editTodoIndex)).doubleClick();
@@ -35,27 +35,5 @@ public class WorkFlowElectron extends CommonOps {
         UIActions.Click(todoPage.getDelete_btns().get(0));
         return todoPage.getDelete_btns().size();
     }
-//
-//    @Step("deleting todo for and getting size of todos for checking delete function")
-//    public static int deleteTodo(int chooseIndexOfTodo) {
-//        todoPage.delete(chooseIndexOfTodo);
-//        return todoPage.list_of_todos.size();
-//    }
 
-
-//    public void edit(int editTodoIndex) {
-//        action = new Actions(driver);
-//        action.moveToElement(list_of_todos.get(editTodoIndex)).doubleClick();
-//        action.sendKeys(Keys.chord(Keys.CONTROL, "a")).sendKeys(Keys.BACK_SPACE).sendKeys(expectedEditedTitle);
-//        action.sendKeys(Keys.ENTER).build().perform();
-//
-//
-//    }
-//
-//    @Step("delete
-//    public void delete(int chooseIndexToDelete) {
-//        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
-//        delete_btns.get(chooseIndexToDelete).click();
-//
-//    }
 }
