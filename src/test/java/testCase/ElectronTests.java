@@ -14,11 +14,11 @@ public class ElectronTests extends CommonOps {
 
     @Test(priority = 2)
     public void checkDeleteElectron() {
-        Verfications.verifyEquals(WorkFlowElectron.deleteTodo(2), expectedAmountofTodosAfterDelete);
+        Verfications.verifyEquals(WorkFlowElectron.deleteTodo(), expectedAmountofTodosAfterDelete);
     }
 
     @Test(priority = 3)
     public void CheckEditElectron() {
-        Verfications.verifyEquals(WorkFlowElectron.edit(0), expectedEditedTitle);
+        Verfications.verifyEquals(WorkFlowElectron.edit(2), expectedEditedTitle);
     }
 }
