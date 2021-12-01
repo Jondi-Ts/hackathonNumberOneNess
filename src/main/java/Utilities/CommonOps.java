@@ -38,16 +38,19 @@ import pageObjects.uintConverter.CalculatorPage2;
 public class CommonOps extends Base {
 
     @BeforeClass
-    public void startSession() {
+    public void startSession() throws MalformedURLException {
 
 //        if(getData("PlatformName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
 
 
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.get(getData(("url")));
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        WebDriverManager.chromedriver().setup();
+//        driver = new ChromeDriver();
+//        driver.get(getData(("url")));
+//        driver.manage().window().maximize();
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        initDeskTop();
+        ManagePages.initDeskTop();
+
 
     }
 
