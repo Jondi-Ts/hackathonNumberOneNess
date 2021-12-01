@@ -9,7 +9,7 @@ public class JDBC extends Base {
     public static void initSQLConnection() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection(dbUrl, username, password);
+            con = DriverManager.getConnection(CommonOps.getData("dbUrl"), CommonOps.getData("dbUserName"), CommonOps.getData("dbUserPassword"));
             stmt = con.createStatement();
         } catch (Exception e) {
             System.out.println("Error Occurred while Connecting to DB, See Details: " + e);
@@ -37,7 +37,6 @@ public class JDBC extends Base {
             System.out.println("Error Occured While Closing JDBC, See Details: " + e);
         }
     }
-
 
 
 }

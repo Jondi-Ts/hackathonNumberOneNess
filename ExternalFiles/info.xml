@@ -9,4 +9,30 @@
     <apiKeysUrl>/api/auth/keys</apiKeysUrl>
     <apiAdminUsersUrl>/api/admin/users/</apiAdminUsersUrl>
 
+
+    <!--appium-->
+    <mobileName>RF8N21R48PA</mobileName>
+    <packageName>com.shivgadhia.android.ukMortgageCalc</packageName>
+    <mainActivity>.MainActivity</mainActivity>
+    <appiumUrl>http://localhost:4723/wd/hub</appiumUrl>
+
+
+    <!--Desktop-->
+    <calcApp>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</calcApp>
+    <desktopUrl>http://127.0.0.1:4723</desktopUrl>
+    <capabilityName>app</capabilityName>
+
+    <!--Electron-->
+    <driverLocation>C:/Automation/electronDriver/electrondriver.exe</driverLocation>
+    <chromeDriver>webdriver.chrome.driver</chromeDriver>
+    <todoExeLocation>C:/Users/jondi/AppData/Local/Programs/todolist/Todolist.exe</todoExeLocation>
+    <chromeOptions>chromeOptions</chromeOptions>
+    <chrome>chrome</chrome>
+
+
+    <!--DataBase-->
+    <dbUrl>jdbc:mysql://remotemysql.com:3306/Y8Nkn2FnBq</dbUrl>
+    <dbUserName>Y8Nkn2FnBq</dbUserName>
+    <dbUserPassword>kLrc4xtpod</dbUserPassword>
+
 </numberone>

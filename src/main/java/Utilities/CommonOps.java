@@ -1,6 +1,5 @@
 package Utilities;
 
-import com.google.common.util.concurrent.Uninterruptibles;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -17,7 +16,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.PageFactory;
 import org.sikuli.script.Screen;
 import org.testng.annotations.*;
 
@@ -33,10 +31,6 @@ import java.util.logging.Level;
 
 import org.testng.asserts.SoftAssert;
 import org.w3c.dom.Document;
-import pageObjects.calculator.CalculatorPage;
-import pageObjects.grafana.*;
-import pageObjects.toDoLIst.TodoPage;
-import pageObjects.uintConverter.CalculatorPage2;
 
 
 public class CommonOps extends Base {
@@ -64,7 +58,6 @@ public class CommonOps extends Base {
 
     }
 
-    //        if(getData("BrowserName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
 
     public void initChrome() {
         WebDriverManager.chromedriver().setup();
@@ -88,7 +81,6 @@ public class CommonOps extends Base {
             throw new Exception("Unsupported browser");
         }
         sikulipath = getData("sikuliPath");
-        ;
         driver.get(getData("urlGrafana"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -98,34 +90,54 @@ public class CommonOps extends Base {
         JDBC.initSQLConnection();
         screen = new Screen();
 
+    }
 
-//        sizeofuserstable = myserveradminpage.getrows().size();
-//        expectedsizeofrows = myserveradminpage.getrows().size();
-//        rows = myserveradminpage.getrows();
-//        loginName = "group1";
-//        name = "winners";
-//        email = "ness@gmail.com";
-//        passworduser = "1212";
-//        Editname = "the best";
-//        search = "MySQL";
-//        exceptedrow = 0;
-//        expectedsizeoficons = 7;
+    //Apium start
+    @Step("init mobile")
+    public void initAppium() throws MalformedURLException {
+        dc.setCapability(MobileCapabilityType.UDID, getData("mobileName"));
+        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, getData("packageName"));
+        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, getData("mainActivity"));
+        androidDriver = new AndroidDriver<>(new URL(getData("appiumUrl")), dc);
+        androidDriver.setLogLevel(Level.INFO);
+        ManagePages.initAppium();
+    }
 
 
+    @Step("init Electron")
+    public void initElectron() {
+        System.setProperty(getData("chromeDriver"), getData("driverLocation"));
+        opt = new ChromeOptions();
+        opt.setBinary(getData("todoExeLocation"));
+        electronCapabilities = new DesiredCapabilities();
+        electronCapabilities.setCapability(getData("chromeOptions"), opt);
+        electronCapabilities.setBrowserName(getData("chrome"));
+        driver = new ChromeDriver(electronCapabilities);
+        ManagePages.initElectron();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @Step("init desktop")
     public void initDeskTop() throws MalformedURLException {
         deskTopCapabilities = new DesiredCapabilities();
-        deskTopCapabilities.setCapability("app", calcApp);
-        driver = new WindowsDriver(new URL("http://127.0.0.1:4723"), deskTopCapabilities);
+        deskTopCapabilities.setCapability(getData("capabilityName"), getData("calcApp"));
+        driver = new WindowsDriver(new URL(getData("desktopUrl")), deskTopCapabilities);
         ManagePages.initDeskTop();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
-    public void endDesktop() {
-        driver.quit();
+    @Step("init api")
+    public void initApi() {
+        urlApi = getData("urlApi");
+        urlKeysSuffix = getData("apiKeysUrl");
+        RestAssured.baseURI = urlApi;
+        httpRequest = RestAssured.given().auth().preemptive().basic(getData("grafanaUserName"),
+                getData("grafanaUserName"));
+        params = new JSONObject();
+        httpRequest.header("Accept", "application/json");
+        httpRequest.header("Content-Type", "application/json");
+        //httpRequest.header("Authorization", "Bearer " + apiKey);
     }
 
 
@@ -148,21 +160,16 @@ public class CommonOps extends Base {
 
 
         if (platformName.equals("web")) {
-            endWeb();
+            endSession();
+            JDBC.closeDBCon();
         } else if (platformName.equals("mobile")) {
             endAppium();
         } else if (platformName.equals("electron")) {
-            endElectron();
+            endSession();
         } else if (platformName.equals("desktop")) {
-            endDesktop();
+            endSession();
         }
 
-    }
-
-    @Step("end web")
-    public void endWeb() {
-        driver.quit();
-        JDBC.closeDBCon();
     }
 
 
@@ -171,7 +178,7 @@ public class CommonOps extends Base {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
-    public String getData(String nodeName) {
+    public static String getData(String nodeName) {
         DocumentBuilder dBuilder;
         Document doc = null;
         File fXmlFile = new File("ExternalFiles/info.xml");
@@ -186,57 +193,37 @@ public class CommonOps extends Base {
         return doc.getElementsByTagName(nodeName).item(0).getTextContent();
     }
 
-    //Apium start
-    @Step("init mobile")
-    public void initAppium() throws MalformedURLException {
-        dc.setCapability(MobileCapabilityType.UDID, MOBILE_NAME);
-        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, APP_PACKAGE_NAME);
-        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, MAIN_ACTIVITY);
-        androidDriver = new AndroidDriver<>(new URL(APPIUM_URL), dc);
-        androidDriver.setLogLevel(Level.INFO);
-        ManagePages.initAppium();
-    }
+
+    //    public void endDesktop() {
+//        driver.quit();
+//    }
+
 
     @Step("End mobile")
     public void endAppium() {
         androidDriver.quit();
     }
+
+    @Step("end web")
+    public void endSession() {
+        driver.quit();
+
+    }
     //Apium End
 
     //start Electorn
-    @Step("init Electron")
-    public void initElectron() {
-        System.setProperty(CHROME_DRIVER, DRIVER_LOCATION);
-        opt = new ChromeOptions();
-        opt.setBinary(TODO_EXE_LOCATION);
-        electronCapabilities = new DesiredCapabilities();
-        electronCapabilities.setCapability(CHROME_OPTIONS_STRING, opt);
-        electronCapabilities.setBrowserName(CHROME);
-        driver = new ChromeDriver(electronCapabilities);
-        ManagePages.initElectron();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }
 
-    @Step("end electron")
-    public void endElectron() {
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
-        driver.quit();
-    }
+
+//    @Step("end electron")
+//    public void endElectron() {
+//        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
+//        driver.quit();
+//    }
 
     //End Electron
 
     //start api init
-    @Step("init api")
-    public void initApi() {
-        urlApi = getData("urlApi");
-        RestAssured.baseURI = urlApi;
-        httpRequest = RestAssured.given().auth().preemptive().basic(getData("grafanaUserName"),
-                getData("grafanaUserName"));
-        params = new JSONObject();
-        httpRequest.header("Accept", "application/json");
-        httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("Authorization", "Bearer " + apiKey);
-    }
+
 
     // Connect to API
     /*public static void initAPI() {

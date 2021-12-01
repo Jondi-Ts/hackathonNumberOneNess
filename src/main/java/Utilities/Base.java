@@ -56,60 +56,40 @@ public class Base {
     protected static Response response;
     protected static JSONObject params;
     protected static JsonPath jp;
-    protected static String apiKey = "eyJrIjoiSzBLRGtGMFlmUDJCOEVmVjdIdW0wVk5NQlVuc3ZjU0giLCJuIjoiYXBpS2V5IiwiaWQiOjF9";
-//finish api
+
+// api
 
 
-    //appium start
-    //driver
+    //appium
+
     protected static AndroidDriver<AndroidElement> androidDriver;
 
-
-    //NAmes and urls
-    protected static final String MOBILE_NAME = "RF8N21R48PA";
-    protected static final String APP_PACKAGE_NAME = "com.shivgadhia.android.ukMortgageCalc";
-    protected static final String MAIN_ACTIVITY = ".MainActivity";
-    protected static final String APPIUM_URL = "http://localhost:4723/wd/hub";
 
     //Desired Capabilities
     protected static DesiredCapabilities dc = new DesiredCapabilities();
 
     //expectations
     protected static CalculatorPage calculatorPage;
-    protected static int expectedCalculationsAfterDelete = 1;
-    protected static int expectedCalculationsBeforeDelete = 2;
-    protected static int twoAppiumCalculations = 2;
+
 
     //desktop
 
     protected DesiredCapabilities deskTopCapabilities;
-    protected final String calcApp = "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App";
     protected static CalculatorPage2 calc;
 
     //electron start
     protected static ChromeOptions opt;
     protected static DesiredCapabilities electronCapabilities;
 
-    protected static String DRIVER_LOCATION = "C:/Automation/electronDriver/electrondriver.exe";
-    protected static String CHROME_DRIVER = "webdriver.chrome.driver";
-    protected static String TODO_EXE_LOCATION = "C:\\Users\\jondi\\AppData\\Local\\Programs\\todolist\\Todolist.exe";
-    protected static String CHROME_OPTIONS_STRING = "chromeOptions";
-    protected static String CHROME = "chrome";
 
     //po
     protected static TodoPage todoPage;
-    protected static int expectedAmountofTodos = 4;
-    public static int expectedAmountofTodosAfterDelete = 3;
-    protected static String expectedEditedTitle = "Edited first goal";
 
 
     //electron End
 
 
     //JDBC
-    static String dbUrl = "jdbc:mysql://remotemysql.com:3306/Y8Nkn2FnBq";
-    static String username = "Y8Nkn2FnBq";
-    static String password = "kLrc4xtpod";
     static ResultSet rs;
     static Connection con;
     static Statement stmt;

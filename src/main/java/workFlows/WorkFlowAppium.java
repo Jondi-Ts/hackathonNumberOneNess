@@ -1,6 +1,7 @@
 package workFlows;
 
 import Utilities.CommonOps;
+import Utilities.ParameterContainer;
 import com.google.common.util.concurrent.Uninterruptibles;
 import extensions.UIActions;
 import pageObjects.calculator.CalculatorPage;
@@ -27,7 +28,7 @@ public class WorkFlowAppium extends CommonOps {
 //        return calculatorPage.delete_btns.size();
 //    }
     public static int checkSave() {
-        for (int i = 0; i < twoAppiumCalculations; i++) {
+        for (int i = 0; i < ParameterContainer.twoAppiumCalculations; i++) {
             UIActions.SendKeys(calculatorPage.getAmount(), "12000" + i);
             UIActions.SendKeys(calculatorPage.getTerm(), "1" + i);
             UIActions.SendKeys(calculatorPage.getRate(), "1" + i);
