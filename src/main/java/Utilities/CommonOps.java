@@ -18,6 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.annotations.*;
 
@@ -97,7 +98,7 @@ public class CommonOps extends Base {
         ManagePages.initWeb();
         JDBC.initSQLConnection();
         screen = new Screen();
-
+        wait= new WebDriverWait(driver,5);
 
 //        sizeofuserstable = myserveradminpage.getrows().size();
 //        expectedsizeofrows = myserveradminpage.getrows().size();
