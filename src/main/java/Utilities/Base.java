@@ -30,6 +30,7 @@ public class Base {
     //general
     protected static WebDriver driver;
     protected static Actions action;
+    protected static  WebDriverWait wait ;
     //put the url in xml
 
 

@@ -5,6 +5,7 @@ import Utilities.JDBC;
 import Utilities.ParameterContainer;
 import com.google.common.util.concurrent.Uninterruptibles;
 import extensions.UIActions;
+import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.sikuli.script.FindFailed;
@@ -19,35 +20,26 @@ public class WorkFlowWeb extends CommonOps {
 
 
     @Step("log in to grafana")
-
+    @Description("log to grafana")
     public static void login() {
         //take the date from mysqldb
-
         UIActions.SendKeys(myloginpage.getUserNameBtn(), JDBC.getCredentials().get(0));
         UIActions.SendKeys(myloginpage.getCurrentPasswordBtn(), JDBC.getCredentials().get(1));
-
         UIActions.Click(myloginpage.getLogInBtn());
-
-        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
         UIActions.Click(myloginpage.getSkipBtn());
-
-
     }
 
 
     @Step("create new user")
+    @Description("create new user")
     public static void CreateUser() {
 
         //Routing to Server Admin Page
         movetoServerAdminPage();
-
         //click om button "new user"
         UIActions.Click(myserveradminpage.getNewuserBtn());
-
         //inset data for user
         insertData();
-
-
     }
 
     @Step("insert data for user")
@@ -66,10 +58,8 @@ public class WorkFlowWeb extends CommonOps {
     public static void EditUser() {
         //move to the row- and double click
         UIActions.moveToandDoubleClick(myserveradminpage.getrow(), myserveradminpage.getnamemo());
-
         //info pages
         editname(ParameterContainer.Editname);
-
         //back to home
         UIActions.Click(myhomepage.getUsers());
 
@@ -86,22 +76,25 @@ public class WorkFlowWeb extends CommonOps {
     @Step("find mysql in data source")
     public static void DataSource() {
 
-        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+        //routing to Configuration page
         UIActions.moveToandClick(myhomepage.getConfigBtn());
+
+        //click on data source
         UIActions.moveToandClick(myhomepage.getDataSourceBtn());
 
-        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
-
+        //click on add data source Btn
         UIActions.Click(myDataPage.getAddDataBtn());
-        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
 
+        //earch a db in the input
         searchFilter(ParameterContainer.search);
-        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+
 
     }
 
-    @Step("search db in filter")
+    @Step("search a db in filter")
     public static void searchFilter(String search) {
+
+        //click and search
         UIActions.Click(mydspage.getFilterinput());
         UIActions.SendKeys(mydspage.getFilterinput(), search);
 
@@ -109,25 +102,23 @@ public class WorkFlowWeb extends CommonOps {
 
     @Step("chack if there is 7 icon")
     public static int Sevenicon() {
-
         return myhomepage.getBar().size();
-
-
     }
 
 
     @Step("sikuli test")
     public static boolean Sikuli() {
         try {
-            Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+
+            Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
             //click on Shiled icon
             screen.click(sikulipath + "shiled.png");
 
-            Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+            Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
             //Write admin in the input
             screen.type(sikulipath + "i.png", "admin");
 
-            Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+            Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
             screen.exists(sikulipath + "log.png");
             return true;
         } catch (FindFailed e) {
@@ -141,10 +132,7 @@ public class WorkFlowWeb extends CommonOps {
     @Step("delete user ")
     public static void deleteUser() {
         UIActions.moveToandDoubleClick(myserveradminpage.getrow(), myserveradminpage.getnamemo());
-        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
-
         UIActions.Click(myserveradminpage.getDeleteBtn());
-        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
         ParameterContainer.sizeofuserstable--;
         UIActions.Click(myserveradminpage.getDeleteBtn2());
 
@@ -154,7 +142,7 @@ public class WorkFlowWeb extends CommonOps {
 
     @Step("softAssert on server admin ")
     public static void softAssertTest() {
-        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
+
         UIActions.moveToandClick(myhomepage.getServerAdminBtn());
         UIActions.moveToandClick(myhomepage.getUserBtn());
 
@@ -178,12 +166,8 @@ public class WorkFlowWeb extends CommonOps {
 
     @Step("navigate to server admin page")
     public static void movetoServerAdminPage() {
-
-        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
         UIActions.moveToandClick(myhomepage.getServerAdminBtn());
         UIActions.moveToandClick(myhomepage.getUserBtn());
-        Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
-
     }
 
 
