@@ -10,41 +10,30 @@ import workFlows.WorkFlowApi;
 
 public class TestsApi extends CommonOps {
 
-
     @Test
-    public void test01() {
-        ApiActions.get(urlKeysSuffix);
-        Verfications.verifyEquals(response.getStatusCode(),200);
-
+    public void test00_clearUsers() {
+        WorkFlowApi.deleteAllAddedUsers();
+        Verfications.verifyEquals(WorkFlowApi.getUsersCount(), 1);
     }
 
     @Test
-    public void test02() {
-        WorkFlowApi.createKey("key4");
-        Verfications.verifyEquals(response.getStatusCode(),200);
-
+    public void test01_getApiKey() {
+        WorkFlowApi.getKeys();
+        Verfications.verifyEquals(response.getStatusCode(), 200);
     }
 
+
     @Test
-    public void test03() {
-        WorkFlowApi.addUser("nn", "user@graf.com","user","userpassword");
-        Verfications.verifyEquals(response.getStatusCode(),200);
+    public void test02_addUser() {
+        WorkFlowApi.addUser("nn", "user@graf.com", "user", "userpassword");
+        Verfications.verifyEquals(response.getStatusCode(), 200);
     }
 
     @Test(dataProvider = "data-provider", dataProviderClass = FileAux.class)
-    public void test035(String name, String email, String login, String pass) {
-        WorkFlowApi.addUser(name, email,login,pass);
-        Verfications.verifyEquals(response.getStatusCode(),200);
+    public void test03_addUsersViaCsv(String name, String email, String login, String pass) {
+        WorkFlowApi.addUser(name, email, login, pass);
+        Verfications.verifyEquals(response.getStatusCode(), 200);
     }
-
-    @Test
-    public void test04() {
-        //ApiWorkFlow.getUser("/api/users/lookup?loginOrEmail=user");
-        //System.out.println(response.getBody().asString());
-        WorkFlowApi.deleteUser("2");
-        Verfications.verifyEquals(response.getStatusCode(),200);
-    }
-
 
 
 }

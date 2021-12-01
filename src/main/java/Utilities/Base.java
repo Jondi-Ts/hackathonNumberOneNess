@@ -74,9 +74,6 @@ public class Base {
 //finish api
 
 
-
-
-
     //appium start
     //driver
     protected static AndroidDriver<AndroidElement> androidDriver;
@@ -91,11 +88,11 @@ public class Base {
     //Desired Capabilities
     protected static DesiredCapabilities dc = new DesiredCapabilities();
 
-   //expectations
+    //expectations
     protected static CalculatorPage calculatorPage;
     protected static int expectedCalculationsAfterDelete = 1;
-    protected static int expectedCalculationsBeforeDelete = 4;
-
+    protected static int expectedCalculationsBeforeDelete = 2;
+    protected static int twoAppiumCalculations = 2;
 
     //desktop
 
