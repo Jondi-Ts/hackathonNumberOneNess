@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <parameter name="PlatformName" value="api"></parameter>
+    <parameter name="BrowserName" value="chrome"></parameter>
+    <classes>
+      <class name="testCase.TestsApi"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

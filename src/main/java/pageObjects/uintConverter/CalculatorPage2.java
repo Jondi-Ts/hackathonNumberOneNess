@@ -4,19 +4,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class CalculatorPage2 {
-    @FindBy(name = "ועוד")
+    @FindBy(name = "Plus")
     public  WebElement btn_plus;
-    @FindBy(name = "הכפל ב")
+    @FindBy(name = "Multiply by")
     public WebElement btn_multy;
-    @FindBy(name = "שווה")
+    @FindBy(name = "Equals")
     public WebElement btn_equal;
     @FindBy (xpath = "//*[@AutomationId='CalculatorResults']")
     public WebElement btn_result;
-    @FindBy(name = "נקה ערך")
+    @FindBy(name = "Clear")
     public WebElement btn_C;
-    @FindBy(name = "שבע")
+    @FindBy(name = "Seven")
     public WebElement btn_7;
-    @FindBy(name = "שתיים")
+    @FindBy(name = "Two")
     public WebElement btn_2;
 
     public Integer result(){

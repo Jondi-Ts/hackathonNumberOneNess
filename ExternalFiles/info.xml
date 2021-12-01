@@ -6,6 +6,7 @@
 <!--    web, api. mobile, electron, desktop-->
     <PlatformName>web</PlatformName>
 
+
 <!--    chrome, firefox, edge-->
-    <BrowserName>firefox</BrowserName>
+    <BrowserName>chrome</BrowserName>
 </numberone>
