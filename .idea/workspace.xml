@@ -4,33 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="cleaning and setting">
+    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="Api was added and chekded">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExternalFiles/info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExternalFiles/info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/0c9e1584-2144-47de-81f7-b4a5cb2a09a9-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2530abde-7ea2-4c32-a2aa-519a228634c7-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/35d23443-0b85-4a1f-a5cc-66306c80ad65-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/51bf0e70-4f0f-40fe-b101-d9b753b29faf-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f8ee7fc8-9cb6-4cda-b0e2-9a4c18227a0f-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/ApiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/ApiActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/TestsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/TestsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/TodoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/TodoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowElectron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowElectron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage$Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage$Direction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/extensions/ApiActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/ApiActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/grafana/Homepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/grafana/Homepage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/toDoLIst/TodoPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/toDoLIst/TodoPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowDeskTop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowDeskTop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/TestsApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/TestsApi.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +69,7 @@
       <recent name="extensions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml">
+  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml">
     <configuration name="AppiumTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hackathonNumberOneNess" />
       <extension name="coverage">
@@ -107,16 +97,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteDesktop.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hackathonNumberOneNess" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteDesktop.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hackathonNumberOneNess" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteElectron.xml" />
@@ -137,13 +117,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ElectronTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hackathonNumberOneNess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCase" />
+      <option name="MAIN_CLASS_NAME" value="testCase.ElectronTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml" />
+        <item itemvalue="TestNG.ElectronTests" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteMobile.xml" />
         <item itemvalue="TestNG.AppiumTests" />
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml" />
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteDesktop.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638347919199</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Api was added and chekded">
+      <created>1638362778510</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638362778510</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,14 +255,15 @@
     <MESSAGE value="selenium pages" />
     <MESSAGE value="added little bit steps" />
     <MESSAGE value="added Jenkins profiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Jenkins profiles" />
+    <MESSAGE value="Api was added and chekded" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api was added and chekded" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pageObjects/grafana/HomePage.java</url>
-          <line>41</line>
+          <line>40</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
