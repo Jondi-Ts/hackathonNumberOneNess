@@ -45,28 +45,13 @@ public class Base {
     protected static DataSourcePage myDataPage;
     protected static AddDataSourcePage mydspage;
     protected static TabPage myTab;
-
-    protected static int expectedsizeofrows;
-    protected static int expectedsizeoficons;
-    protected static int sizeofuserstable;
-    protected static List<WebElement> rows;
-    protected static String loginName;
-    protected static String name;
-    protected static String email;
-    protected static String passworduser;
-    protected static String Editname;
-    protected static String search;
-    protected static int exceptedrow;
-    protected static String expectedTitle = "Welcome to Grafana";
-
-
     protected static Screen screen;
-    protected static String sikulipath = "C:\\Automation\\HackathonNumberOne\\ImagesRepository\\";
+    protected static String sikulipath;
 
 
     //Rest API
-    protected static String urlApi = "http://localhost:3000";
-    protected static String urlKeysSuffix = "/api/auth/keys";
+    protected static String urlApi;
+    protected static String urlKeysSuffix;
     protected static RequestSpecification httpRequest;
     protected static Response response;
     protected static JSONObject params;

@@ -35,5 +35,11 @@ public class TestsApi extends CommonOps {
         Verfications.verifyEquals(response.getStatusCode(), 200);
     }
 
+    @Test
+    public void test11_clearUsers() {
+        WorkFlowApi.deleteAllAddedUsers();
+        Verfications.verifyEquals(WorkFlowApi.getUsersCount(), 1);
+    }
+
 
 }

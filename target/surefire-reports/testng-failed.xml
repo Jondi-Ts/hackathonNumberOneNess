@@ -5,18 +5,18 @@
     <listener class-name="Utilities.AutomationListeners"/>
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
-    <parameter name="PlatformName" value="electron"/>
+    <parameter name="PlatformName" value="mobile"/>
     <parameter name="BrowserName" value="chrome"/>
     <classes>
-      <class name="testCase.ElectronTests">
+      <class name="testCase.AppiumTests">
         <methods>
           <include name="beforeMethod"/>
           <include name="startSession"/>
-          <include name="checkDeleteElectron"/>
+          <include name="checkDelete"/>
           <include name="endSession"/>
-          <include name="checkAddElectron"/>
+          <include name="checkSave"/>
         </methods>
-      </class> <!-- testCase.ElectronTests -->
+      </class> <!-- testCase.AppiumTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
