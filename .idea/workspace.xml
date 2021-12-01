@@ -6,21 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="Api was added and chekded">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/TodoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/TodoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowElectron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowElectron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/extensions/ApiActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/ApiActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/grafana/Homepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/grafana/Homepage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/toDoLIst/TodoPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/toDoLIst/TodoPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowElectron.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/TestsApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/TestsApi.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638362778510</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Api was added and chekded">
+      <created>1638366295295</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638366295295</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

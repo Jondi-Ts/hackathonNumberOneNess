@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6882" started-at="2021-12-01T15:48:17 IST" finished-at="2021-12-01T15:48:24 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="6882" started-at="2021-12-01T15:48:17 IST" finished-at="2021-12-01T15:48:24 IST">
+      <class name="testCase.DeskTopTest">
+        <test-method status="PASS" signature="startSession(java.lang.String, java.lang.String)[pri:0, instance:testCase.DeskTopTest@38600b]" name="startSession" is-config="true" duration-ms="3386" started-at="2021-12-01T15:48:17 IST" finished-at="2021-12-01T15:48:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[desktop]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase.DeskTopTest@38600b]" name="beforeMethod" is-config="true" duration-ms="180" started-at="2021-12-01T15:48:20 IST" finished-at="2021-12-01T15:48:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase.DeskTopTest.testDeskTop()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDeskTop()[pri:0, instance:testCase.DeskTopTest@38600b]" name="testDeskTop" duration-ms="2965" started-at="2021-12-01T15:48:21 IST" finished-at="2021-12-01T15:48:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeskTop -->
+        <test-method status="PASS" signature="endSession(java.lang.String)[pri:0, instance:testCase.DeskTopTest@38600b]" name="endSession" is-config="true" duration-ms="89" started-at="2021-12-01T15:48:24 IST" finished-at="2021-12-01T15:48:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[desktop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endSession -->
+      </class> <!-- testCase.DeskTopTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
