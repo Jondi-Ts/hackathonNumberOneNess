@@ -217,7 +217,8 @@ public class CommonOps extends Base {
     @Step("init api")
     public void initApi() {
         RestAssured.baseURI = urlApi;
-        httpRequest = RestAssured.given().auth().preemptive().basic("admin", "admin");
+        httpRequest = RestAssured.given().auth().preemptive().basic(getData("grafanaUserName"),
+                getData("grafanaUserName"));
         params = new JSONObject();
         httpRequest.header("Accept", "application/json");
         httpRequest.header("Content-Type", "application/json");

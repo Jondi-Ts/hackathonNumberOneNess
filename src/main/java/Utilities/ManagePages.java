@@ -1,5 +1,6 @@
 package Utilities;
 
+import extensions.UIActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.calculator.CalculatorPage;
@@ -19,7 +20,7 @@ public class ManagePages extends Base {
         myuserinfopage = PageFactory.initElements(driver, UserInfoPage.class);
         myDataPage = PageFactory.initElements(driver, DataSourcePage.class);
         mydspage = PageFactory.initElements(driver, AddDataSourcePage.class);
-        myTab=PageFactory.initElements(driver, TabPage.class);
+        myTab = PageFactory.initElements(driver, TabPage.class);
     }
 
     @Step("init DeskTop pages")
@@ -35,9 +36,10 @@ public class ManagePages extends Base {
 
     @Step("init appiumpages")
     public static void initAppium() {
-        androidDriver.resetApp();
-        calculatorPage.okAfterReset();
         calculatorPage = new CalculatorPage(androidDriver);
+        androidDriver.resetApp();
+        UIActions.Click(calculatorPage.getAfter_reset_ok_btn());
+
 
     }
 }

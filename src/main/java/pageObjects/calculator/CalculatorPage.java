@@ -36,7 +36,7 @@ public class CalculatorPage extends Base {
     @AndroidFindBy(xpath = "//*[@id='btnDel']")
     private WebElement delete_btn;
     @AndroidFindBy(xpath = "//*[@id='btnDel']")
-    public List<WebElement> delete_btns;
+    private List<WebElement> delete_btns;
     @AndroidFindBy(xpath = "//*[@text='OK']")
     private WebElement confirm_delete_btn;
     @AndroidFindBy(xpath = "//*[@text='Cancel']")
@@ -45,36 +45,45 @@ public class CalculatorPage extends Base {
     private WebElement after_reset_ok_btn;
 
 
-    public void sendKeys(String sendAmount, String sendTerm, String sendRate) {
-        amount.sendKeys(sendAmount);
-        term.sendKeys(sendTerm);
-        rate.sendKeys(sendRate);
+    public WebElement getAmount() {
+        return amount;
     }
 
-    public void calculate() {
-        calculate_btn.click();
+    public WebElement getTerm() {
+        return term;
     }
 
-    public void save() {
-        save_btn.click();
+    public WebElement getRate() {
+        return rate;
     }
 
-    public void swipe() {
-        swipeScreen(Direction.LEFT);
+    public WebElement getCalculate_btn() {
+        return calculate_btn;
     }
 
-
-    public void delete() {
-        delete_btn.click();
-        confirm_delete_btn.click();
-
-
+    public WebElement getSave_btn() {
+        return save_btn;
     }
 
-    public void okAfterReset() {
-        after_reset_ok_btn.click();
+    public WebElement getDelete_btn() {
+        return delete_btn;
     }
 
+    public List<WebElement> getDelete_btns() {
+        return delete_btns;
+    }
+
+    public WebElement getConfirm_delete_btn() {
+        return confirm_delete_btn;
+    }
+
+    public WebElement getCancel_delete_btn() {
+        return cancel_delete_btn;
+    }
+
+    public WebElement getAfter_reset_ok_btn() {
+        return after_reset_ok_btn;
+    }
 
     public void swipeScreen(Direction dir) {
         System.out.println("swipeScreen(): dir: '" + dir + "'"); // always log your actions

@@ -2,11 +2,8 @@
 <numberone>
     <url>http://localhost:3000</url>
     <urlAppium>1</urlAppium>
+    <grafanaUserName>admin</grafanaUserName>
+    <grafanaPassword>admin</grafanaPassword>
 
-<!--    web, api. mobile, electron, desktop-->
-    <PlatformName>web</PlatformName>
 
-
-<!--    chrome, firefox, edge-->
-    <BrowserName>chrome</BrowserName>
 </numberone>
