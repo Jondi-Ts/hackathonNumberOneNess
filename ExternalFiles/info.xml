@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <numberone>
-    <url>http://localhost:3000</url>
+    <urlGrafana>http://localhost:3000/</urlGrafana>
+    <urlApi>http://localhost:3000/</urlApi>
     <urlAppium>1</urlAppium>
     <grafanaUserName>admin</grafanaUserName>
     <grafanaPassword>admin</grafanaPassword>
-
+    <sikuliPath>C:/Automation/Hacakton/hackathonNumberOneNess/ImagesRepository/</sikuliPath>
+    <apiKeysUrl>/api/auth/keys</apiKeysUrl>
+    <apiAdminUsersUrl>/api/admin/users/</apiAdminUsersUrl>
 
 </numberone>

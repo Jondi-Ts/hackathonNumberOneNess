@@ -2,6 +2,7 @@ package workFlows;
 
 import Utilities.CommonOps;
 import Utilities.JDBC;
+import Utilities.ParameterContainer;
 import com.google.common.util.concurrent.Uninterruptibles;
 import extensions.UIActions;
 import io.qameta.allure.Step;
@@ -9,19 +10,21 @@ import org.openqa.selenium.WebElement;
 import org.sikuli.script.FindFailed;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
 
 public class WorkFlowWeb extends CommonOps {
 
+
     @Step("log in to grafana")
 
     public static void login() {
         //take the date from mysqldb
 
-        UIActions.SendKeys( myloginpage.getUserNameBtn(),JDBC.getCredentials().get(0));
-        UIActions.SendKeys( myloginpage.getCurrentPasswordBtn(),JDBC.getCredentials().get(1));
+        UIActions.SendKeys(myloginpage.getUserNameBtn(), JDBC.getCredentials().get(0));
+        UIActions.SendKeys(myloginpage.getCurrentPasswordBtn(), JDBC.getCredentials().get(1));
 
         UIActions.Click(myloginpage.getLogInBtn());
 
@@ -39,51 +42,49 @@ public class WorkFlowWeb extends CommonOps {
         movetoServerAdminPage();
 
         //click om button "new user"
-        UIActions.Click( myserveradminpage.getNewuserBtn());
+        UIActions.Click(myserveradminpage.getNewuserBtn());
 
         //inset data for user
         insertData();
 
 
-
-
     }
-     @Step("insert data for user")
-     public static void insertData() {
 
-        UIActions.SendKeys(mynewuserpage.getNameInput(),loginName);
-        UIActions.SendKeys(mynewuserpage.getEmailInput(),email);
-        UIActions.SendKeys(mynewuserpage.getUsernameInput(),name);
-        UIActions.SendKeys(mynewuserpage.getPasswordInput(),passworduser);
+    @Step("insert data for user")
+    public static void insertData() {
+
+        UIActions.SendKeys(mynewuserpage.getNameInput(), ParameterContainer.loginName);
+        UIActions.SendKeys(mynewuserpage.getEmailInput(), ParameterContainer.email);
+        UIActions.SendKeys(mynewuserpage.getUsernameInput(), ParameterContainer.name);
+        UIActions.SendKeys(mynewuserpage.getPasswordInput(), ParameterContainer.passworduser);
         UIActions.Click(mynewuserpage.getCreateBtn());
-         sizeofuserstable++;
-         System.out.println("size " + sizeofuserstable);
-     }
+        ParameterContainer.sizeofuserstable++;
+        System.out.println("size " + ParameterContainer.sizeofuserstable);
+    }
 
     @Step("edit user")
     public static void EditUser() {
         //move to the row- and double click
-        UIActions.moveToandDoubleClick( myserveradminpage.getrow(),myserveradminpage.getnamemo());
+        UIActions.moveToandDoubleClick(myserveradminpage.getrow(), myserveradminpage.getnamemo());
 
         //info pages
-        editname(Editname);
+        editname(ParameterContainer.Editname);
 
         //back to home
-        UIActions.Click(  myhomepage.getUsers());
+        UIActions.Click(myhomepage.getUsers());
 
     }
 
     @Step("edit name")
-    public static void editname(String name)
-    {
+    public static void editname(String name) {
         UIActions.Click(myuserinfopage.getEditnameBtnBtn());
         UIActions.ClearInput(myuserinfopage.getInputname());
-        UIActions.SendKeys(myuserinfopage.getInputname(),name);
+        UIActions.SendKeys(myuserinfopage.getInputname(), name);
         UIActions.Click(myuserinfopage.getSaveNameBtn());
     }
 
     @Step("find mysql in data source")
-    public static  void DataSource() {
+    public static void DataSource() {
 
         Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
         UIActions.moveToandClick(myhomepage.getConfigBtn());
@@ -94,15 +95,15 @@ public class WorkFlowWeb extends CommonOps {
         UIActions.Click(myDataPage.getAddDataBtn());
         Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
 
-        searchFilter(search);
+        searchFilter(ParameterContainer.search);
         Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
 
     }
 
-   @Step("search db in filter")
+    @Step("search db in filter")
     public static void searchFilter(String search) {
         UIActions.Click(mydspage.getFilterinput());
-        UIActions.SendKeys(mydspage.getFilterinput(),search);
+        UIActions.SendKeys(mydspage.getFilterinput(), search);
 
     }
 
@@ -115,9 +116,8 @@ public class WorkFlowWeb extends CommonOps {
     }
 
 
-
     @Step("sikuli test")
-    public static boolean Sikuli(){
+    public static boolean Sikuli() {
         try {
             Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
             //click on Shiled icon
@@ -125,7 +125,7 @@ public class WorkFlowWeb extends CommonOps {
 
             Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
             //Write admin in the input
-            screen.type(sikulipath + "i.png","admin");
+            screen.type(sikulipath + "i.png", "admin");
 
             Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
             screen.exists(sikulipath + "log.png");
@@ -139,33 +139,31 @@ public class WorkFlowWeb extends CommonOps {
 
     //delete
     @Step("delete user ")
-    public static void deleteUser()
-    {
-        UIActions.moveToandDoubleClick( myserveradminpage.getrow(),myserveradminpage.getnamemo());
+    public static void deleteUser() {
+        UIActions.moveToandDoubleClick(myserveradminpage.getrow(), myserveradminpage.getnamemo());
         Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
 
-        UIActions.Click(  myserveradminpage.getDeleteBtn());
+        UIActions.Click(myserveradminpage.getDeleteBtn());
         Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
-        sizeofuserstable--;
-        UIActions.Click(  myserveradminpage.getDeleteBtn2());
+        ParameterContainer.sizeofuserstable--;
+        UIActions.Click(myserveradminpage.getDeleteBtn2());
 
 
     }
 
 
     @Step("softAssert on server admin ")
-    public static void softAssertTest()
-    {
+    public static void softAssertTest() {
         Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
         UIActions.moveToandClick(myhomepage.getServerAdminBtn());
         UIActions.moveToandClick(myhomepage.getUserBtn());
 
 
-        WebElement users =myTab.getusers();
+        WebElement users = myTab.getusers();
         WebElement orgs = myTab.getuorgs();
         WebElement setting = myTab.getsettings();
         WebElement plufins = myTab.getplugins();
-        WebElement state =myTab.getStatsandlicensing();
+        WebElement state = myTab.getStatsandlicensing();
 
         softAssertion.assertTrue(users.isDisplayed(), "Oh No, users is not Displayed");
         softAssertion.assertTrue(orgs.isDisplayed(), "Oh No, orgs is not Displayed");
@@ -178,11 +176,8 @@ public class WorkFlowWeb extends CommonOps {
     }
 
 
-
-
-
     @Step("navigate to server admin page")
-    public static  void movetoServerAdminPage() {
+    public static void movetoServerAdminPage() {
 
         Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
         UIActions.moveToandClick(myhomepage.getServerAdminBtn());

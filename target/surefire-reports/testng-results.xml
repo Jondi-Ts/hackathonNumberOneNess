@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37151" started-at="2021-12-01T17:12:59 IST" finished-at="2021-12-01T17:13:36 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="37151" started-at="2021-12-01T17:12:59 IST" finished-at="2021-12-01T17:13:36 IST">
+      <class name="testCase.WebTest">
+        <test-method status="PASS" signature="startSession(java.lang.String, java.lang.String)[pri:0, instance:testCase.WebTest@7d2a6eac]" name="startSession" is-config="true" duration-ms="15304" started-at="2021-12-01T17:12:59 IST" finished-at="2021-12-01T17:13:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase.WebTest@7d2a6eac]" name="beforeMethod" is-config="true" duration-ms="103" started-at="2021-12-01T17:13:15 IST" finished-at="2021-12-01T17:13:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase.WebTest.loginTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:testCase.WebTest@7d2a6eac]" name="loginTest" duration-ms="2147" started-at="2021-12-01T17:13:15 IST" finished-at="2021-12-01T17:13:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase.WebTest@7d2a6eac]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2021-12-01T17:13:17 IST" finished-at="2021-12-01T17:13:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase.WebTest.CreateUserTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="CreateUserTest()[pri:2, instance:testCase.WebTest@7d2a6eac]" name="CreateUserTest" duration-ms="2311" started-at="2021-12-01T17:13:17 IST" finished-at="2021-12-01T17:13:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUserTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase.WebTest@7d2a6eac]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2021-12-01T17:13:20 IST" finished-at="2021-12-01T17:13:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase.WebTest.EditUserTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="EditUserTest()[pri:3, instance:testCase.WebTest@7d2a6eac]" name="EditUserTest" duration-ms="935" started-at="2021-12-01T17:13:20 IST" finished-at="2021-12-01T17:13:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditUserTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase.WebTest@7d2a6eac]" name="beforeMethod" is-config="true" duration-ms="9" started-at="2021-12-01T17:13:21 IST" finished-at="2021-12-01T17:13:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase.WebTest.DeleteUserTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="DeleteUserTest()[pri:4, instance:testCase.WebTest@7d2a6eac]" name="DeleteUserTest" duration-ms="1579" started-at="2021-12-01T17:13:21 IST" finished-at="2021-12-01T17:13:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase.WebTest@7d2a6eac]" name="beforeMethod" is-config="true" duration-ms="9" started-at="2021-12-01T17:13:22 IST" finished-at="2021-12-01T17:13:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase.WebTest.SoftAssertTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="SoftAssertTest()[pri:5, instance:testCase.WebTest@7d2a6eac]" name="SoftAssertTest" duration-ms="1167" started-at="2021-12-01T17:13:22 IST" finished-at="2021-12-01T17:13:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SoftAssertTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase.WebTest@7d2a6eac]" name="beforeMethod" is-config="true" duration-ms="9" started-at="2021-12-01T17:13:24 IST" finished-at="2021-12-01T17:13:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase.WebTest.DataSourceTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="DataSourceTest()[pri:6, instance:testCase.WebTest@7d2a6eac]" name="DataSourceTest" duration-ms="2724" started-at="2021-12-01T17:13:24 IST" finished-at="2021-12-01T17:13:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataSourceTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase.WebTest@7d2a6eac]" name="beforeMethod" is-config="true" duration-ms="9" started-at="2021-12-01T17:13:27 IST" finished-at="2021-12-01T17:13:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase.WebTest.SeveniconTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="SeveniconTest()[pri:7, instance:testCase.WebTest@7d2a6eac]" name="SeveniconTest" duration-ms="23" started-at="2021-12-01T17:13:27 IST" finished-at="2021-12-01T17:13:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeveniconTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase.WebTest@7d2a6eac]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2021-12-01T17:13:27 IST" finished-at="2021-12-01T17:13:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase.WebTest.SikuliTest() throws org.sikuli.script.FindFailed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="SikuliTest()[pri:8, instance:testCase.WebTest@7d2a6eac]" name="SikuliTest" duration-ms="8998" started-at="2021-12-01T17:13:27 IST" finished-at="2021-12-01T17:13:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SikuliTest -->
+        <test-method status="PASS" signature="endSession(java.lang.String)[pri:0, instance:testCase.WebTest@7d2a6eac]" name="endSession" is-config="true" duration-ms="635" started-at="2021-12-01T17:13:36 IST" finished-at="2021-12-01T17:13:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endSession -->
+      </class> <!-- testCase.WebTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

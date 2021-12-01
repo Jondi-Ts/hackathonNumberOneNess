@@ -5,7 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="Api was added and chekded">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/DDT/ApiListeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/ParameterContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExternalFiles/info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExternalFiles/info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteApi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteApi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/CheckEditElectron.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/CreateUserTest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/DataSourceTest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/DeleteUserTest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/EditUserTest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/SeveniconTest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/SikuliTest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/SoftAssertTest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/checkAddElectron.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/checkDelete.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/checkDeleteElectron.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/checkSave.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/loginTest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/test00_clearUsers.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/test01.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/test01_getApiKey.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/test02_addUser.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/test03.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/test035.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/test03_addUsersViaCsv.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Record/testDeskTop.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/TestsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/TestsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/grafana/Homepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/grafana/Homepage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Suite/Test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Suite/Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-testCase.AppiumTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-testCase.AppiumTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-testCase.TestsApi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-testCase.TestsApi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/TestsApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/TestsApi.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,24 +106,7 @@
       <recent name="extensions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml">
-    <configuration name="AppiumTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hackathonNumberOneNess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testCase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testCase" />
-      <option name="MAIN_CLASS_NAME" value="testCase.AppiumTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteWeb.xml">
     <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hackathonNumberOneNess" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteApi.xml" />
@@ -102,6 +137,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteWeb.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hackathonNumberOneNess" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteWeb.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ElectronTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hackathonNumberOneNess" />
       <extension name="coverage">
@@ -121,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteWeb.xml" />
+        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml" />
         <item itemvalue="TestNG.ElectronTests" />
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteMobile.xml" />
-        <item itemvalue="TestNG.AppiumTests" />
       </list>
     </recent_temporary>
   </component>
@@ -141,13 +186,12 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="Api was added and chekded" />
       <created>1638090335207</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -216,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638362778510</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Api was added and chekded">
+      <created>1638366295295</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638366295295</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,13 +275,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add empty ui actions" />
@@ -245,26 +295,12 @@
     <MESSAGE value="Api was added and chekded" />
     <option name="LAST_COMMIT_MESSAGE" value="Api was added and chekded" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="184" y="92" key="MergeDialog" timestamp="1638366953888">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="184" y="92" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638366953888" />
-    <state x="672" y="237" key="MultipleFileMergeDialog" timestamp="1638366953892">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="672" y="237" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638366953892" />
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1638366947017">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1638366947017" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pageObjects/grafana/HomePage.java</url>
-          <line>40</line>
+          <line>37</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

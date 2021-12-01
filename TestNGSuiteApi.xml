@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="false">
   <listeners>
-    <listener class-name="Utilities.AutomationListeners"/>
+    <listener class-name="Utilities.DDT.ApiListeners"/>
   </listeners>
 
   <test name="Test">

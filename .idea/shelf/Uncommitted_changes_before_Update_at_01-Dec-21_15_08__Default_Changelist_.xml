@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_01-Dec-21_15_08_[Default_Changelist]" date="1638364130430" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_15_08_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 01-Dec-21 15:08 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/testCase/TestsApi.class" />
+    <option name="AFTER_PATH" value="target/test-classes/testCase/TestsApi.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_15_08_[Default_Changelist]/TestsApi.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/extensions/ApiActions.class" />
+    <option name="AFTER_PATH" value="target/classes/extensions/ApiActions.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_15_08_[Default_Changelist]/ApiActions.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/workFlows/WorkFlowApi.class" />
+    <option name="AFTER_PATH" value="target/classes/workFlows/WorkFlowApi.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_15_08_[Default_Changelist]/WorkFlowApi.class" />
+  </binary>
+</changelist>

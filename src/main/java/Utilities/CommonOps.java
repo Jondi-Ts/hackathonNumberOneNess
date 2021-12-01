@@ -44,21 +44,21 @@ public class CommonOps extends Base {
     @BeforeClass
     @Parameters({"PlatformName", "BrowserName"})
 
-    public void startSession(String platformName, String browserName) throws MalformedURLException {
+    public void startSession(String platformName, String browserName) throws Exception {
 
-//        if(getData("PlatformName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
 
-        String platform = platformName;//getData("PlatformName");
-        if (platform.equals("web")) {
+        if (platformName.equals("web")) {
             initWeb(browserName);
-        } else if (platform.equals("api")) {
+        } else if (platformName.equals("api")) {
             initApi();
-        } else if (platform.equals("mobile")) {
+        } else if (platformName.equals("mobile")) {
             initAppium();
-        } else if (platform.equals("electron")) {
+        } else if (platformName.equals("electron")) {
             initElectron();
-        } else if (platform.equals("desktop")) {
+        } else if (platformName.equals("desktop")) {
             initDeskTop();
+        } else {
+            throw new Exception("Invalid platform");
         }
 
 
@@ -77,7 +77,7 @@ public class CommonOps extends Base {
     }
 
     @Step("init Web")
-    public void initWeb(String browserName) {
+    public void initWeb(String browserName) throws Exception {
 
         String browser = browserName; //getData("BrowserName");
         if (browser.equals("chrome")) {
@@ -85,29 +85,32 @@ public class CommonOps extends Base {
         } else if (browser.equals("firefox")) {
             initFirefox();
         } else {
-            initChrome();
+            throw new Exception("Unsupported browser");
         }
-        driver.get("http://localhost:3000/");
+        sikulipath = getData("sikuliPath");
+        ;
+        driver.get(getData("urlGrafana"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         action = new Actions(driver);
         softAssertion = new SoftAssert();
-
         ManagePages.initWeb();
-
-        sizeofuserstable = myserveradminpage.getrows().size();
-        expectedsizeofrows = myserveradminpage.getrows().size();
-        rows = myserveradminpage.getrows();
-        loginName="group1";
-        name ="winners" ;
-        email="ness@gmail.com";
-        passworduser="1212";
-        Editname = "the best";
-        search = "MySQL";
-        exceptedrow=0;
-        expectedsizeoficons=7;
         JDBC.initSQLConnection();
         screen = new Screen();
+
+
+//        sizeofuserstable = myserveradminpage.getrows().size();
+//        expectedsizeofrows = myserveradminpage.getrows().size();
+//        rows = myserveradminpage.getrows();
+//        loginName = "group1";
+//        name = "winners";
+//        email = "ness@gmail.com";
+//        passworduser = "1212";
+//        Editname = "the best";
+//        search = "MySQL";
+//        exceptedrow = 0;
+//        expectedsizeoficons = 7;
+
 
     }
 
@@ -127,11 +130,14 @@ public class CommonOps extends Base {
 
 
     @BeforeMethod
-    public void beforeMethod(Method method) {
-        try {
-            MonteScreenRecorder.startRecord(method.getName());
-        } catch (Exception e) {
-            e.printStackTrace();
+    @Parameters({"PlatformName"})
+    public void beforeMethod(String platformName, Method method) {
+        if (!platformName.equals("api")) {
+            try {
+                MonteScreenRecorder.startRecord(method.getName());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -139,7 +145,6 @@ public class CommonOps extends Base {
     @AfterClass
     @Parameters({"PlatformName"})
     public void endSession(String platformName) {
-        //        if(getData("PlatformName")=="web" { initWeb() } else if (getData("PlatformName")=="api" { initAPI() } else if (
 
 
         if (platformName.equals("web")) {
@@ -223,6 +228,7 @@ public class CommonOps extends Base {
     //start api init
     @Step("init api")
     public void initApi() {
+        urlApi = getData("urlApi");
         RestAssured.baseURI = urlApi;
         httpRequest = RestAssured.given().auth().preemptive().basic(getData("grafanaUserName"),
                 getData("grafanaUserName"));
