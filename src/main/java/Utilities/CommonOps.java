@@ -87,7 +87,7 @@ public class CommonOps extends Base {
         action = new Actions(driver);
         softAssertion = new SoftAssert();
         ManagePages.initWeb();
-        JDBC.initSQLConnection();
+//        JDBC.initSQLConnection();
         screen = new Screen();
 
     }
@@ -133,7 +133,7 @@ public class CommonOps extends Base {
         urlKeysSuffix = getData("apiKeysUrl");
         RestAssured.baseURI = urlApi;
         httpRequest = RestAssured.given().auth().preemptive().basic(getData("grafanaUserName"),
-                getData("grafanaUserName"));
+                getData("grafanaPassword"));
         params = new JSONObject();
         httpRequest.header("Accept", "application/json");
         httpRequest.header("Content-Type", "application/json");
@@ -159,15 +159,15 @@ public class CommonOps extends Base {
     public void endSession(String platformName) {
 
 
-        if (platformName.equals("web")) {
-            endSession();
-            JDBC.closeDBCon();
-        } else if (platformName.equals("mobile")) {
-            endAppium();
-        } else if (platformName.equals("electron")) {
-            endSession();
-        } else if (platformName.equals("desktop")) {
-            endSession();
+        switch (platformName) {
+            case "web":
+            case "desktop":
+            case "electron":
+                endSession();
+                break;
+            case "mobile":
+                endAppium();
+                break;
         }
 
     }

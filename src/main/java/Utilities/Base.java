@@ -56,7 +56,7 @@ public class Base {
     protected static RequestSpecification httpRequest;
     protected static Response response;
     protected static JSONObject params;
-    protected static JsonPath jp;
+   // protected static JsonPath jp;
 
 // api
 

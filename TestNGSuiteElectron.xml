@@ -5,8 +5,8 @@
     <listener class-name="Utilities.AutomationListeners"/>
   </listeners>
   <test name="Test">
-    <parameter name="PlatformName" value="electron"></parameter>
-    <parameter name="BrowserName" value="chrome"></parameter>
+    <parameter name="PlatformName" value="electron"/>
+    <parameter name="BrowserName" value="chrome"/>
     <classes>
       <class name="testCase.ElectronTests"/>
 

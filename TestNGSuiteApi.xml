@@ -6,8 +6,8 @@
   </listeners>
 
   <test name="Test">
-    <parameter name="PlatformName" value="api"></parameter>
-    <parameter name="BrowserName" value="chrome"></parameter>
+    <parameter name="PlatformName" value="api"/>
+    <parameter name="BrowserName" value="chrome"/>
     <classes>
       <class name="testCase.TestsApi"/>
 

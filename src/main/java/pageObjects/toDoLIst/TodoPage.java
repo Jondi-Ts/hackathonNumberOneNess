@@ -20,25 +20,17 @@ public class TodoPage extends Base {
     @FindBy(xpath = "//div[@class='view_2Ow90']//*[name()='svg'][@class='destroy_19w1q']")
     private List<WebElement> delete_btns;
 
-//
-//    @Step("create todo")
-//    public void makeTodo(String todoName) {
-//        input_toDo.sendKeys(todoName);
-//        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
-//        input_toDo.sendKeys(Keys.ENTER);
-//    }
-//
-//
-
-
+    @Step("Get input filed for todo name")
     public WebElement getInput_toDo() {
         return input_toDo;
     }
 
+    @Step("Get list of todos")
     public List<WebElement> getList_of_todos() {
         return list_of_todos;
     }
 
+    @Step("Get list of delete buttons")
     public List<WebElement> getDelete_btns() {
         return delete_btns;
     }

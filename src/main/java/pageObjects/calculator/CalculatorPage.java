@@ -7,6 +7,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import io.qameta.allure.Step;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -44,43 +45,52 @@ public class CalculatorPage extends Base {
     @AndroidFindBy(xpath = "//*[@id='button1']")
     private WebElement after_reset_ok_btn;
 
-
+    @Step("Get amount element")
     public WebElement getAmount() {
         return amount;
     }
 
+    @Step("Get term elment")
     public WebElement getTerm() {
         return term;
     }
 
+    @Step("Get rate element")
     public WebElement getRate() {
         return rate;
     }
 
+    @Step("Get calculation button")
     public WebElement getCalculate_btn() {
         return calculate_btn;
     }
 
+    @Step("Get save button")
     public WebElement getSave_btn() {
         return save_btn;
     }
 
+    @Step("Get delete button")
     public WebElement getDelete_btn() {
         return delete_btn;
     }
 
+    @Step("Get list of delete buttons")
     public List<WebElement> getDelete_btns() {
         return delete_btns;
     }
 
+    @Step("Get delete confirmation button")
     public WebElement getConfirm_delete_btn() {
         return confirm_delete_btn;
     }
 
+    @Step("Get delete canceling button")
     public WebElement getCancel_delete_btn() {
         return cancel_delete_btn;
     }
 
+    @Step("Get ok button after reseting")
     public WebElement getAfter_reset_ok_btn() {
         return after_reset_ok_btn;
     }

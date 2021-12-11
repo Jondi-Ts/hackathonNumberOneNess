@@ -4,34 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="changed appium and chekd workflows">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_11_14_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_11_14__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_15_08_[Default_Changelist]/ApiActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_15_08_[Default_Changelist]/TestsApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_15_08_[Default_Changelist]/WorkFlowApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_15_08_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_15_08__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_20_33_[Default_Changelist]/ApiListeners.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_20_33_[Default_Changelist]/ParameterContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_20_33_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Dec-21_20_33__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30-Nov-21_12_50__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30-Nov-21_12_50__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30-Nov-21_12_55__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30-Nov-21_12_55__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30-Nov-21_12_58__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30-Nov-21_12_58__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30-Nov-21_13_38_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30-Nov-21_13_38__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30-Nov-21_13_38__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30-Nov-21_13_38__Default_Changelist_1.xml" beforeDir="false" />
+    <list default="true" id="844920c9-1dc6-44fc-99c4-0af2a8be2aef" name="Default Changelist" comment="recording fixed">
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/MonteScreenRecorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/MonteScreenRecorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/CreateUserTest.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/DataSourceTest.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/DeleteUserTest.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/EditUserTest.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/SeveniconTest.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/SikuliTest.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/SoftAssertTest.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Record/loginTest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteApi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteApi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteDesktop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteDesktop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteElectron.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteElectron.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteMobile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteMobile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGSuiteWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGSuiteWeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/DDT/FileAux.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/DDT/ManageDDT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/DDT/ManageDDT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/calculator/CalculatorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/grafana/AddDataSourcePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/grafana/AddDataSourcePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/TodoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/toDoLIst/TodoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowAppium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/WorkFlowWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/AppiumTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/AppiumTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/DeskTopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/DeskTopTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/ElectronTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/TestsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/TestsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/DDT/FileAux.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/DDT/ManageDDT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/DDT/ManageDDT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/MonteScreenRecorder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/MonteScreenRecorder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/calculator/CalculatorPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowAppium.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workFlows/WorkFlowWeb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/DeskTopTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/DeskTopTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/TestsApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/TestsApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/WebTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/WebTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,20 +86,10 @@
       <recent name="extensions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml">
+  <component name="RunManager" selected="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteWeb.xml">
     <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hackathonNumberOneNess" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteApi.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteDesktop.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hackathonNumberOneNess" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGSuiteDesktop.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -131,13 +127,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ElectronTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hackathonNumberOneNess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCase" />
+      <option name="MAIN_CLASS_NAME" value="testCase.ElectronTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml" />
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteWeb.xml" />
-        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteDesktop.xml" />
+        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteApi.xml" />
         <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteMobile.xml" />
+        <item itemvalue="TestNG.C:/Automation/Hacakton/hackathonNumberOneNess/TestNGSuiteElectron.xml" />
+        <item itemvalue="TestNG.ElectronTests" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638383533664</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="recording fixed">
+      <created>1639229012209</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1639229012209</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +303,8 @@
     <MESSAGE value="Api was added and chekded" />
     <MESSAGE value="After base Cleaning and common ops" />
     <MESSAGE value="changed appium and chekd workflows" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed appium and chekd workflows" />
+    <MESSAGE value="recording fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="recording fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

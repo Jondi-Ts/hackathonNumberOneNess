@@ -5,8 +5,8 @@
         <listener class-name="Utilities.AutomationListeners"/>
     </listeners>
     <test name="Test">
-        <parameter name="PlatformName" value="desktop"></parameter>
-        <parameter name="BrowserName" value="chrome"></parameter>
+        <parameter name="PlatformName" value="desktop"/>
+        <parameter name="BrowserName" value="chrome"/>
         <classes>
             <class name="testCase.DeskTopTest"/>
 

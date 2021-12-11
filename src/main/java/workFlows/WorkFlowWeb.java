@@ -23,9 +23,11 @@ public class WorkFlowWeb extends CommonOps {
     @Description("log to grafana")
     public static void login() {
         //take the date from mysqldb
+        JDBC.initSQLConnection();
         UIActions.SendKeys(myloginpage.getUserNameBtn(), JDBC.getCredentials().get(0));
         UIActions.SendKeys(myloginpage.getCurrentPasswordBtn(), JDBC.getCredentials().get(1));
         UIActions.Click(myloginpage.getLogInBtn());
+        JDBC.closeDBCon();
         UIActions.Click(myloginpage.getSkipBtn());
     }
 
@@ -55,6 +57,7 @@ public class WorkFlowWeb extends CommonOps {
     }
 
     @Step("edit user")
+
     public static void EditUser() {
         //move to the row- and double click
         UIActions.moveToandDoubleClick(myserveradminpage.getrow(), myserveradminpage.getnamemo());
@@ -85,7 +88,7 @@ public class WorkFlowWeb extends CommonOps {
         //click on add data source Btn
         UIActions.Click(myDataPage.getAddDataBtn());
 
-        //earch a db in the input
+        //search a db in the input
         searchFilter(ParameterContainer.search);
 
 
