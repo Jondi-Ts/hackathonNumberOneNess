@@ -1,5 +1,5 @@
 # hackathonNumberOneNess
-Authors: Nave Ben-Elyahu, Mimi Isaak, Jondi Tsveniashvili
+#Authors: Nave Ben-Elyahu, Mimi Isaak, Jondi Tsveniashvili
 
 
 Mentors: Yoni Flenner, Rowan Kendal. 
