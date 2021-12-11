@@ -41,7 +41,7 @@ public class MonteScreenRecorder extends ScreenRecorder
     }
 
     public static void startRecord(String methodName) throws Exception {
-        File file = new File("./src/test/Record");
+        File file = new File("./test-recordings/");
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = screenSize.width;
         int height = screenSize.height;
